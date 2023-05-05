@@ -63,10 +63,11 @@ class GuideLogin : AppCompatActivity() {
     }
 
     private fun updateUI() {
-
-            val intent = Intent(this@GuideLogin, GuideProfile::class.java)
-            startActivity(intent)
-
+        val btnLogin = findViewById<Button>(R.id.btnGlogin)
+        btnLogin.setOnClickListener {
+        val intent = Intent(this@GuideLogin, GuideProfile::class.java)
+        startActivity(intent)
+    }
     }
     public override fun onStart() {
         super.onStart()

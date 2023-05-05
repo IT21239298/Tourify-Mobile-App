@@ -4,7 +4,268 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
+    android:background="@drawable/profilebg1"
     tools:context=".GuidePayment">
 
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="416dp"
+        android:layout_height="292dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="400dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/driver_prf_back" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/alfa_slab_one"
+        android:text="@string/profileGtopic"
+        android:textColor="@color/profileGtopic"
+        android:textSize="@dimen/profileGtopic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/imageView8"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="68dp"
+        android:layout_height="66dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:srcCompat="@drawable/profile" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/profileGtv1"
+        android:textColor="@color/profileNameG"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView12" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="363dp"
+        android:layout_height="463dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:srcCompat="@drawable/bg3" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="@dimen/btnGprofileW"
+        android:layout_height="@dimen/btnGprofile"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/profileGtopic"
+        android:contentDescription="click on profile"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="@+id/imageView13"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:srcCompat="@drawable/profile1" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="@dimen/btnGprofileW"
+        android:layout_height="@dimen/btnGprofile"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/profileGtopic"
+        android:contentDescription="click on services"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@+id/imageButton"
+        app:layout_constraintTop_toTopOf="@+id/imageView13"
+        app:srcCompat="@drawable/service1" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="@dimen/btnGprofileW"
+        android:layout_height="@dimen/btnGprofile"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="@color/profileGtopic"
+        android:contentDescription="click on payment schema"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@+id/imageButton2"
+        app:layout_constraintTop_toTopOf="@+id/imageView13"
+        app:srcCompat="@drawable/price3" />
+
+    <ScrollView
+        android:layout_width="363dp"
+        android:layout_height="369dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton2">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/alfa_slab_one"
+
+                android:text="Payment Schema"
+                android:textSize="30sp"
+                android:textStyle="normal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView14"
+                android:layout_width="319dp"
+                android:layout_height="114dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView8"
+                app:srcCompat="@drawable/cardviewbg" />
+
+            <EditText
+                android:id="@+id/GpayDay"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:ems="10"
+                android:hint="Per day"
+                android:background="@drawable/edit_text_bg"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="@+id/imageView14"
+                app:layout_constraintHorizontal_bias="0.459"
+                app:layout_constraintStart_toStartOf="@+id/imageView14"
+                app:layout_constraintTop_toTopOf="@+id/imageView14" />
+
+            <ImageView
+                android:id="@+id/imageView15"
+                android:layout_width="323dp"
+                android:layout_height="292dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.516"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView14"
+                app:srcCompat="@drawable/cardviewbg" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter Details"
+                android:textSize="24sp"
+                android:textStyle="bold|italic"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.524"
+                app:layout_constraintStart_toStartOf="@+id/imageView15"
+                app:layout_constraintTop_toTopOf="@+id/imageView15" />
+
+            <EditText
+                android:id="@+id/GnoOfDays"
+                android:layout_width="263dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/edit_text_bg"
+                android:ems="10"
+                android:hint="Number of days"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/imageView15"
+                app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+            <EditText
+                android:id="@+id/Gpaytour"
+                android:layout_width="263dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/edit_text_bg"
+                android:ems="10"
+                android:hint="Tour Type"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="@+id/imageView15"
+                app:layout_constraintHorizontal_bias="0.579"
+                app:layout_constraintStart_toStartOf="@+id/imageView15"
+                app:layout_constraintTop_toBottomOf="@+id/GnoOfDays" />
+
+            <EditText
+                android:id="@+id/Gpayaccomadation"
+                android:layout_width="263dp"
+                android:layout_height="55dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/edit_text_bg"
+                android:ems="10"
+                android:hint="Accomadation cost"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="@+id/imageView15"
+                app:layout_constraintHorizontal_bias="0.352"
+                app:layout_constraintStart_toStartOf="@+id/imageView15"
+                app:layout_constraintTop_toBottomOf="@+id/Gpaytour" />
+
+            <Button
+                android:id="@+id/btnCalculateG"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="#020A35"
+                android:text="Calculate"
+                android:textColor="#00BCD4"
+                android:textColorHint="#051573"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="@+id/imageView15"
+                app:layout_constraintStart_toStartOf="@+id/imageView15"
+                app:layout_constraintTop_toBottomOf="@+id/Gpayaccomadation" />
+
+            <ImageView
+                android:id="@+id/imageView16"
+                android:layout_width="330dp"
+                android:layout_height="118dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="4dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView15"
+                app:srcCompat="@drawable/cardviewbg" />
+
+            <TextView
+                android:id="@+id/tvtotalPay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="Total Payment"
+                android:textSize="24sp"
+                android:textStyle="bold|italic"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/imageView16"
+                app:layout_constraintTop_toBottomOf="@+id/imageView15" />
+
+            <EditText
+                android:id="@+id/guideTotal"
+                android:layout_width="186dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="64dp"
+                android:background="@drawable/edit_text_bg"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="   Total Amount"
+                app:layout_constraintEnd_toEndOf="@+id/imageView16"
+                app:layout_constraintTop_toTopOf="@+id/tvtotalPay" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

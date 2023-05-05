@@ -44,7 +44,7 @@
             android:name=".GuideServices"
             android:exported="false" />
         <activity
-            android:name=".GuidePayment"
+            android:name=".MainActivity"
             android:exported="false" />
         <activity
             android:name=".GuideProfile"
@@ -54,7 +54,7 @@
             android:exported="true"/>
 
         <activity
-            android:name=".MainActivity"
+            android:name=".GuidePayment"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
