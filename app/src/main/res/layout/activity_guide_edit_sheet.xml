@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/vty"
+    android:layout_height="match_parent"
+    tools:context=".guideEditSheet">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/aclonica"
+        android:text="Edit Details"
+
+        android:textColor="#120101"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editEmail"
+        android:layout_width="@dimen/editEmail"
+        android:layout_height="@dimen/editEmailH"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/edit_text_bg"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/editPasswordG"
+        android:layout_width="@dimen/editEmail"
+        android:layout_height="@dimen/editEmailH"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edit_text_bg"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Password"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editEmail" />
+
+    <EditText
+        android:id="@+id/editContactNoG"
+        android:layout_width="@dimen/editEmail"
+        android:layout_height="@dimen/editEmailH"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/edit_text_bg"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Contact Number"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editPasswordG" />
+
+    <EditText
+        android:id="@+id/editSppecilaizedG"
+        android:layout_width="@dimen/editEmail"
+        android:layout_height="@dimen/editEmailH"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/edit_text_bg"
+        android:ems="10"
+        android:hint="Specialized Area"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editContactNoG" />
+
+    <EditText
+        android:id="@+id/editDescriptionG"
+        android:layout_width="@dimen/editEmail"
+        android:layout_height="@dimen/editEmailH"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/edit_text_bg"
+        android:ems="10"
+        android:hint="Description"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editSppecilaizedG" />
+
+    <Button
+        android:id="@+id/Geditbtn"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:text="Edit"
+        android:backgroundTint="#020A35"
+        android:textColor="#00BCD4"
+        android:textColorHint="#051573"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editDescriptionG" />
+
+    <Button
+        android:id="@+id/Gcancelbtn"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#020A35"
+        android:text="Cancel"
+        android:textColor="#EC3131"
+        android:textColorHint="#051573"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Geditbtn" />
+</androidx.constraintlayout.widget.ConstraintLayout>

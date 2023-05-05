@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/subPerson"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/vty"
+    tools:context=".GuideRegister1">
+
+
+    <TextView
+        android:id="@+id/guideRegister"
+        android:layout_width="@dimen/mainTopicWidth"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="serif"
+        android:text="@string/guideRegister"
+        android:textColor="#2A0A85"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/regImg1"
+        android:layout_width="118dp"
+        android:layout_height="86dp"
+        android:layout_marginTop="55dp"
+        app:layout_constraintBottom_toTopOf="@+id/registerScroll"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.587"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.195"
+        app:srcCompat="@drawable/register" />
+
+    <TextView
+        android:id="@+id/tvSubGTopic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/alike"
+        android:text="@string/tvSubGTopic"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/registerScroll"
+        app:layout_constraintEnd_toStartOf="@+id/regImg1" />
+
+    <ScrollView
+        android:id="@+id/registerScroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/registerCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:backgroundTint="@color/cardview_shadow_end_color"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/tvNameG"
+                    android:layout_width="@dimen/editTextw"
+                    android:layout_height="@dimen/editTextH"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/edit_text_bg"
+                    android:ems="10"
+                    android:hint="@string/tvNameG"
+                    android:inputType="textPersonName"
+                    android:textColorHint="@color/black" />
+
+                <EditText
+                    android:id="@+id/tvNicG"
+                    android:layout_width="@dimen/editTextw"
+                    android:layout_height="@dimen/editTextH"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/edit_text_bg"
+                    android:ems="10"
+                    android:hint="@string/tvNicG"
+                    android:inputType="textPersonName"
+                    android:textColorHint="@color/black" />
+
+                <EditText
+                    android:id="@+id/tvContactNoG"
+                    android:layout_width="@dimen/editTextw"
+                    android:layout_height="@dimen/editTextH"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/edit_text_bg"
+                    android:ems="10"
+                    android:hint="@string/tvContactNo"
+                    android:inputType="textPersonName"
+                    android:textColorHint="@color/black" />
+
+                <EditText
+                    android:id="@+id/tvAddressG"
+                    android:layout_width="@dimen/editTextw"
+                    android:layout_height="@dimen/editTextH"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/edit_text_bg"
+                    android:ems="10"
+                    android:hint="@string/tvAddressG"
+                    android:inputType="textPersonName"
+                    android:textColorHint="@color/black" />
+
+
+                <EditText
+                    android:id="@+id/tvDistrictG"
+                    android:layout_width="@dimen/editTextw"
+                    android:layout_height="@dimen/editTextH"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/edit_text_bg"
+                    android:ems="10"
+                    android:hint="@string/tvDistrictG"
+                    android:inputType="textPersonName"
+                    android:textColorHint="@color/black" />
+
+                <EditText
+                    android:id="@+id/tvGemail"
+                    android:layout_width="@dimen/editTextw"
+                    android:layout_height="@dimen/editTextH"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/edit_text_bg"
+                    android:ems="10"
+                    android:hint="@string/tvGemail"
+                    android:inputType="textPersonName"
+                    android:textColorHint="@color/black" />
+
+                <EditText
+                    android:id="@+id/tvGpassword"
+                    android:layout_width="@dimen/editTextw"
+                    android:layout_height="@dimen/editTextH"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/edit_text_bg"
+                    android:ems="10"
+                    android:hint="@string/tvGpassword"
+                    android:inputType="textPersonName"
+                    android:textColorHint="@color/black" />
+                <TextView
+                    android:id="@+id/subQualification"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/alike"
+                    android:text="@string/subQualification"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+                <EditText
+                    android:id="@+id/tvGlanguage"
+                    android:layout_width="@dimen/editTextw"
+                    android:layout_height="@dimen/editTextH"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/edit_text_bg"
+                    android:ems="10"
+                    android:hint="@string/tvGlanguage"
+                    android:inputType="textPersonName"
+                    android:textColorHint="@color/black" />
+
+                <EditText
+                    android:id="@+id/tvGspecialiazation"
+                    android:layout_width="@dimen/editTextw"
+                    android:layout_height="@dimen/editTextH"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/edit_text_bg"
+                    android:ems="10"
+                    android:hint="@string/tvGspecialization"
+                    android:inputType="textPersonName"
+                    android:textColorHint="@color/black" />
+
+                <EditText
+                    android:id="@+id/tvGdescription"
+                    android:layout_width="@dimen/editTextw"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/edit_text_bg"
+                    android:ems="10"
+                    android:hint="@string/tvGdescription"
+                    android:inputType="textPersonName"
+                    android:textColorHint="@color/black" />
+
+                <TextView
+                    android:id="@+id/subAcc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/alike"
+                    android:text="@string/subAcc"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/tvGbank"
+                    android:layout_width="@dimen/editTextw"
+                    android:layout_height="@dimen/editTextH"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/edit_text_bg"
+                    android:hint="@string/tvGbank" />
+
+                <EditText
+                    android:id="@+id/tvGbranch"
+                    android:layout_width="@dimen/editTextw"
+                    android:layout_height="@dimen/editTextH"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/edit_text_bg"
+                    android:hint="@string/tvGbranch" />
+
+                <EditText
+                    android:id="@+id/tvGaccount"
+                    android:layout_width="@dimen/editTextw"
+                    android:layout_height="@dimen/editTextH"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/edit_text_bg"
+                    android:hint="@string/tvGaccount" />
+
+
+                <Button
+                    android:id="@+id/nextGBtn1"
+                    android:layout_width="@dimen/btn1w"
+                    android:layout_height="@dimen/btn1H"
+                    android:layout_marginLeft="100dp"
+                    android:backgroundTint="#020A35"
+                    android:text="@string/gbtn2"
+                    android:textColor="#00BCD4"
+                    android:textColorHint="#051573"
+                    android:textSize="20sp"
+                    app:cornerRadius="20dp" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

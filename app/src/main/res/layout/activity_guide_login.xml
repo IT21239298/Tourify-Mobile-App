@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/subPerson"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginbg"
+    tools:context=".GuideLogin">
+
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="@dimen/loginimgW"
+        android:layout_height="@dimen/loginimgH"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/loginimg" />
+
+    <TextView
+        android:id="@+id/loginTopic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/aclonica"
+        android:text="@string/loginTopic"
+        android:textColor="@color/profileGtopic"
+        android:textSize="38sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.419"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <TextView
+        android:id="@+id/loginGtv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/loginGtv1"
+        android:textColor="#FDF6F6"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginTopic" />
+
+    <EditText
+        android:id="@+id/tvGusername"
+        android:layout_width="@dimen/loginbtnW"
+        android:layout_height="@dimen/loginbtnH"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/cardviewbg"
+        android:drawableLeft="@drawable/baseline_email_24"
+        android:ems="10"
+        android:hint="@string/tvGusername1"
+        android:textColorHint="@color/loginG"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginGtv1" />
+
+    <EditText
+        android:id="@+id/tvGpasswordlogin"
+        android:layout_width="@dimen/loginbtnW"
+        android:layout_height="@dimen/loginbtnH"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/cardviewbg"
+        android:drawableLeft="@drawable/baseline_lock_24"
+        android:ems="10"
+        android:hint="Password"
+
+        android:textColorHint="@color/loginG"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvGusername" />
+
+    <Button
+        android:id="@+id/btnGlogin"
+        android:layout_width="@dimen/GloginbtnW"
+        android:layout_height="@dimen/GloginbtnH"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#020A35"
+        android:text="@string/btnlogin1"
+        android:textColor="#00BCD4"
+        android:textColorHint="#051573"
+        android:textSize="20sp"
+        app:cornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvGpasswordlogin" />
+
+    <TextView
+        android:id="@+id/gSingupbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/gSingupbtn"
+        android:textColor="#FDF6F6"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnGlogin" />
+</androidx.constraintlayout.widget.ConstraintLayout>

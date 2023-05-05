@@ -10,4 +10,43 @@
     <string name="DontHaveAccount">Don\'t have an account?</string>
     <string name="Singup">SIGN UP</string>
     <string name="driverhomeprfname">Sathsara Sithum</string>
+
+
+   <!--Kaveesha-->
+    <string name="guideRegister">Guide Registration</string>
+    <string name="tvNameG">Full Name</string>
+    <string name="tvNicG">NIC</string>
+    <string name="tvContactNo">Contact number</string>
+    <string name="tvAddressG">Address</string>
+    <string name="tvDistrictG">District</string>
+    <string name="tvGemail">email</string>
+    <string name="tvGpassword">Password</string>
+    <string name="tvSubGTopic">Personal Details</string>
+    <string name="subQualification">Qualification Details</string>
+    <string name="subAcc">Account Details</string>
+    <string name="gbtn2">Register</string>
+    <string name="nextGBtn1">Next</string>
+    <string name="profileGtopic">My Profile</string>
+    <string name="profileGtv1">Nimal Wijethunga</string>
+    <string name="profileGusername">Username</string>
+    <string name="profileGuidepassword">Password</string>
+    <string name="profileGnumber">Contact Number</string>
+    <string name="profileGsepcilized">Specialized Area</string>
+    <string name="profileGdescription">Description</string>
+    <string name="loginTopic">Welcome Back</string>
+    <string name="loginGtv1">Login to your Account</string>
+    <string name="btnlogin1">LOGIN</string>
+    <string name="gSingupbtn">Don\'t have an account? SIGN UP</string>
+    <string name="tvGusername">Username</string>
+    <string name="tvGpasswordlogin">Password</string>
+    <string name="serviceGTV">Services</string>
+    <string name="addPackagebtnG">Add Packages</string>
+    <string name="tvGlanguage">Qualified Language</string>
+    <string name="tvGspecialization">Area of Specialization</string>
+    <string name="tvGdescription">Qualification description</string>
+    <string name="tvGbank">Bank</string>
+    <string name="tvGbranch">Branch</string>
+    <string name="tvGaccount">Account number</string>
+    <string name="tvGusername1">email</string>
+    <string name="profileGemail">Email</string>
 </resources>
