@@ -126,7 +126,7 @@
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttnedit"
         android:layout_width="150dp"
         android:layout_height="58dp"
         android:layout_marginTop="12dp"
@@ -143,7 +143,7 @@
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName5" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btneditcancel"
         android:layout_width="227dp"
         android:layout_height="58dp"
         android:layout_marginTop="8dp"
@@ -156,6 +156,6 @@
         app:iconTint="#170885"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintTop_toBottomOf="@+id/buttnedit" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
