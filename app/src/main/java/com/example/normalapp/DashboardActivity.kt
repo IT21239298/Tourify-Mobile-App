@@ -1,12 +1,16 @@
 package com.example.normalapp
 
 import android.content.Intent
+import android.graphics.drawable.ColorDrawable
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.ViewGroup
+import android.view.Window
 import android.widget.Button
 import android.widget.ImageButton
 import android.widget.TextView
 import android.widget.Toast
+import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.database.DatabaseReference
@@ -22,7 +26,7 @@ class DashboardActivity : AppCompatActivity() {
     private lateinit var driverBirth: TextView
     private lateinit var driverGender: TextView
     private lateinit var driverAddres: TextView
-
+    private lateinit var  btneditD : Button
     private lateinit var database: DatabaseReference
 // ...
 
@@ -38,8 +42,35 @@ class DashboardActivity : AppCompatActivity() {
         driverBirth = findViewById(R.id.DriverProfileBithday)
         driverGender = findViewById(R.id.DriverPorfileGender)
         driverAddres = findViewById(R.id.driverProfileAddress)
-
+       btneditD =  findViewById(R.id.dEditbtn)
         btnLogOut  = findViewById(R.id.Logoutbtn)
+
+
+
+        btneditD.setOnClickListener{
+
+            val bottomSheet = BottomSheetDialog(this)
+            bottomSheet.requestWindowFeature(Window.FEATURE_NO_TITLE)
+            bottomSheet.setContentView(R.layout.activity_driver_edit)
+            bottomSheet.window!!.setLayout(
+                ViewGroup.LayoutParams.MATCH_PARENT,
+                ViewGroup.LayoutParams.WRAP_CONTENT
+            )
+            bottomSheet.window!!.setBackgroundDrawable(ColorDrawable(android.graphics.Color.TRANSPARENT))
+
+            val  btnCancel: Button? = bottomSheet.findViewById(R.id.btneditcancel)
+            val btnEdited: Button ? = bottomSheet.findViewById(R.id.buttnedit)
+
+            btnCancel!!.setOnClickListener{
+                bottomSheet.dismiss()
+            }
+            btnEdited!!.setOnClickListener{
+                Toast.makeText(this,"Edited successfully" ,Toast.LENGTH_SHORT).show()
+                bottomSheet.dismiss()
+            }
+            bottomSheet.show()
+
+        }
 
         val userDriverID = FirebaseAuth.getInstance().currentUser!!.uid
 
