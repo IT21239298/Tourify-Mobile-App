@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/profilebg1"
+    tools:context=".GuideProfile">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/pbgW"
+        android:layout_height="@dimen/pbgH"
+        android:layout_marginBottom="387dp"
+        android:backgroundTint="#B14F4F"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/profilebg2" />
+
+    <TextView
+        android:id="@+id/profileGtopic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/alfa_slab_one"
+        android:text="@string/profileGtopic"
+        android:textColor="@color/profileGtopic"
+        android:textSize="@dimen/profileGtopic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgProfileG"
+        android:layout_width="@dimen/profileGpic"
+        android:layout_height="@dimen/profileGpicH"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/profileGtopic"
+        app:srcCompat="@drawable/profile" />
+
+    <TextView
+        android:id="@+id/profileGtv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="@string/profileGtv1"
+        android:textColor="@color/profileNameG"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgProfileG" />
+
+
+    <ImageView
+        android:id="@+id/imgbg3"
+        android:layout_width="@dimen/bgGW"
+        android:layout_height="@dimen/pGH"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/profileGbtn1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgProfileG"
+        app:srcCompat="@drawable/bg3" />
+
+    <ImageButton
+                android:id="@+id/profileGbtn1"
+                android:layout_width="@dimen/btnGprofileW"
+                android:layout_height="@dimen/btnGprofile"
+                android:layout_marginStart="160dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="1dp"
+                android:backgroundTint="@color/profileGtopic"
+                android:contentDescription="click on profile"
+                android:scaleType="fitCenter"
+                app:layout_constraintEnd_toStartOf="@+id/imgbg3"
+                app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="@+id/imgbg3"
+                app:srcCompat="@drawable/profile1" />
+
+            <ImageButton
+                android:id="@+id/servicesGbtn2"
+                android:layout_width="@dimen/btnGprofileW"
+                android:layout_height="@dimen/btnGprofile"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:scaleType="fitCenter"
+                android:backgroundTint="@color/profileGtopic"
+                android:contentDescription="click on services"
+                app:layout_constraintStart_toEndOf="@+id/profileGbtn1"
+                app:layout_constraintTop_toTopOf="@+id/imgbg3"
+                app:srcCompat="@drawable/services"
+
+                />
+
+            <ImageButton
+                android:id="@+id/payementGbtn"
+                android:layout_width="@dimen/btnGprofileW"
+                android:layout_height="@dimen/btnGprofile"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="@color/profileGtopic"
+                android:scaleType="fitCenter"
+                android:contentDescription="click on payment schema"
+                app:layout_constraintStart_toEndOf="@+id/servicesGbtn2"
+                app:layout_constraintTop_toTopOf="@+id/imgbg3"
+                app:srcCompat="@drawable/price3" />
+
+    <ScrollView
+        android:layout_width="364dp"
+        android:layout_height="366dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/servicesGbtn2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/profileGemail"
+                android:layout_width="@dimen/tvPG"
+                android:layout_height="@dimen/tvPGH"
+                android:layout_marginTop="36dp"
+                android:layout_marginLeft="50dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="@string/profileGemail"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/profileGpassword"
+                android:layout_width="@dimen/tvPG"
+                android:layout_height="@dimen/tvPGH"
+                android:layout_marginTop="24dp"
+                android:layout_marginLeft="50dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="@string/profileGuidepassword" />
+
+            <EditText
+                android:id="@+id/profileGcontactnumber"
+                android:layout_width="@dimen/tvPG"
+                android:layout_height="@dimen/tvPGH"
+                android:layout_marginStart="52dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginLeft="50dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="@string/profileGnumber" />
+
+            <EditText
+                android:id="@+id/profileGspecialization"
+                android:layout_width="@dimen/tvPG"
+                android:layout_height="@dimen/tvPGH"
+                android:layout_marginTop="24dp"
+                android:layout_marginLeft="50dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="@string/profileGsepcilized" />
+
+            <EditText
+                android:id="@+id/profileGdescription"
+                android:layout_width="@dimen/tvPG"
+                android:layout_height="@dimen/tvPGH"
+                android:layout_marginTop="24dp"
+                android:layout_marginLeft="50dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="@string/profileGdescription" />
+
+            <Button
+                android:id="@+id/GprofileEditbtn"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="130dp"
+                android:backgroundTint="#358318"
+                android:drawableRight="@drawable/baseline_edit_24"
+                android:text="Edit" />
+
+            <Button
+                android:id="@+id/GprofileDeltebtn"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="130dp"
+                android:backgroundTint="#670B0B"
+                android:drawableRight="@drawable/baseline_delete_24"
+                android:text="Delete" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
