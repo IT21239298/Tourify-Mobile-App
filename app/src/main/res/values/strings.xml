@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Tourism-App</string>
+    <string name="home_topic">WAY TO  WONDERING WORLD.........</string>
+    <string name="home_topic2">Visit SriLanka......</string>
+    <string name="driverloginTopic">Welcome back</string>
+    <string name="driverTopic2">Login to your Account</string>
+    <string name="LoginEmail">    Email</string>
+    <string name="DriverpwdLogin">Pasword</string>
+    <string name="DriverLoginpwd">Password</string>
+    <string name="DontHaveAccount">Don\'t have an account?</string>
+    <string name="Singup">SIGN UP</string>
+    <string name="driverhomeprfname">Sathsara Sithum</string>
+</resources>

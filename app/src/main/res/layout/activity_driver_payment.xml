@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/head_driverprrf"
+    tools:context=".DriverPaymentActivity">
+
+
+    <TextView
+        android:id="@+id/walet"
+        android:layout_width="203dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="16dp"
+        android:text="Payment Schema"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.543"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="127dp"
+        android:layout_height="106dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/walet"
+        app:srcCompat="@drawable/cal_animaton" />
+
+    <ScrollView
+        android:layout_width="396dp"
+        android:layout_height="399dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9"
+        tools:ignore="MissingConstraints">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/imageView17"
+                android:layout_width="347dp"
+                android:layout_height="200dp"
+
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.419"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/driver_register" />
+
+            <ImageView
+                android:id="@+id/imageView48"
+                android:layout_width="152dp"
+                android:layout_height="41dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="40dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.131"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageView17"
+                app:srcCompat="@drawable/drivermain" />
+
+            <ImageView
+                android:id="@+id/imageView49"
+                android:layout_width="152dp"
+                android:layout_height="41dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="@+id/imageView17"
+                app:layout_constraintTop_toBottomOf="@+id/imageView48"
+                app:srcCompat="@drawable/drivermain" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="Duration per hour"
+                android:textColor="#120101"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@+id/imageView48"
+                app:layout_constraintTop_toTopOf="@+id/imageView48" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="Distance per km"
+                android:textColor="#120101"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@+id/imageView49"
+                app:layout_constraintTop_toTopOf="@+id/imageView49" />
+
+            <ImageView
+                android:id="@+id/imageView52"
+                android:layout_width="116dp"
+                android:layout_height="42dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="24dp"
+                app:layout_constraintEnd_toEndOf="@+id/imageView17"
+                app:layout_constraintTop_toTopOf="@+id/imageView17"
+                app:srcCompat="@drawable/calculate" />
+
+            <ImageView
+                android:id="@+id/imageView54"
+                android:layout_width="116dp"
+                android:layout_height="42dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginEnd="24dp"
+                app:layout_constraintEnd_toEndOf="@+id/imageView17"
+                app:layout_constraintTop_toBottomOf="@+id/imageView52"
+                app:srcCompat="@drawable/calculate" />
+
+            <EditText
+                android:id="@+id/hourPayment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="4dp"
+                android:drawableRight="@drawable/baseline_edit_24"
+                android:minHeight="48dp"
+                android:text="LKR.150.00"
+                android:textColor="#120101"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@+id/imageView52"
+                app:layout_constraintTop_toTopOf="@+id/imageView52" />
+
+            <EditText
+                android:id="@+id/kmPayment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="4dp"
+                android:drawableRight="@drawable/baseline_edit_24"
+                android:minHeight="48dp"
+                android:text="LKR.200.00"
+                android:textColor="#120101"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@+id/imageView54"
+                app:layout_constraintTop_toTopOf="@+id/imageView54" />
+
+            <ImageView
+                android:id="@+id/imageView55"
+                android:layout_width="339dp"
+                android:layout_height="240dp"
+                android:layout_marginStart="44dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginEnd="44dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView17"
+                app:srcCompat="@drawable/driver_register" />
+
+            <ImageView
+                android:id="@+id/imageView56"
+                android:layout_width="152dp"
+                android:layout_height="41dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toStartOf="@+id/imageView55"
+                app:layout_constraintTop_toBottomOf="@+id/imageView67"
+                app:srcCompat="@drawable/drivermain" />
+
+            <ImageView
+                android:id="@+id/imageView57"
+                android:layout_width="152dp"
+                android:layout_height="41dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="@+id/imageView55"
+                app:layout_constraintTop_toBottomOf="@+id/imageView56"
+                app:srcCompat="@drawable/drivermain" />
+
+            <ImageView
+                android:id="@+id/imageView58"
+                android:layout_width="152dp"
+                android:layout_height="41dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="@+id/imageView55"
+                app:layout_constraintTop_toBottomOf="@+id/imageView57"
+                app:srcCompat="@drawable/drivermain" />
+
+            <ImageView
+                android:id="@+id/imageView59"
+                android:layout_width="120dp"
+                android:layout_height="44dp"
+                android:layout_marginTop="80dp"
+                android:layout_marginEnd="20dp"
+                app:layout_constraintEnd_toEndOf="@+id/imageView55"
+                app:layout_constraintTop_toTopOf="@+id/imageView55"
+                app:srcCompat="@drawable/calculate" />
+
+            <ImageView
+                android:id="@+id/imageView60"
+                android:layout_width="119dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="20dp"
+                app:layout_constraintEnd_toEndOf="@+id/imageView55"
+                app:layout_constraintTop_toBottomOf="@+id/imageView59"
+                app:srcCompat="@drawable/calculate" />
+
+            <ImageView
+                android:id="@+id/imageView61"
+                android:layout_width="116dp"
+                android:layout_height="42dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="24dp"
+                app:layout_constraintEnd_toEndOf="@+id/imageView55"
+                app:layout_constraintTop_toBottomOf="@+id/imageView60"
+                app:srcCompat="@drawable/calculate" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="8dp"
+                android:text="Enter hour"
+                android:textColor="#120101"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@+id/imageView56"
+                app:layout_constraintTop_toTopOf="@+id/imageView56" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="4dp"
+                android:text="Enter km"
+                android:textColor="#120101"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@+id/imageView57"
+                app:layout_constraintTop_toTopOf="@+id/imageView57" />
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="150dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="4dp"
+                android:text="Enter additional fees"
+                android:textColor="#120101"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@+id/imageView58"
+                app:layout_constraintTop_toTopOf="@+id/imageView58" />
+
+            <EditText
+                android:id="@+id/enterhourpayment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="36dp"
+                android:layout_marginTop="8dp"
+                android:minWidth="48dp"
+                android:minHeight="48dp"
+                android:text="10"
+                android:textColor="#120101"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@+id/imageView59"
+                app:layout_constraintTop_toTopOf="@+id/imageView59" />
+
+            <EditText
+                android:id="@+id/enterkmPaymnt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="60dp"
+                android:minWidth="48dp"
+                android:minHeight="48dp"
+                android:text="20"
+                android:textColor="#120101"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@+id/imageView60"
+                app:layout_constraintTop_toTopOf="@+id/imageView60" />
+
+            <EditText
+                android:id="@+id/additinalpayment"
+                android:layout_width="111dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="16dp"
+                android:text="LKR.2000.00"
+                android:textColor="#120101"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@+id/imageView61"
+                app:layout_constraintTop_toTopOf="@+id/imageView61" />
+
+            <Button
+                android:id="@+id/calculatebtn"
+                android:layout_width="183dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="112dp"
+                android:backgroundTint="#020A35"
+                android:text="Calculate"
+
+
+                android:textColor="#00BCD4"
+                android:textColorHint="#051573"
+                app:cornerRadius="20dp"
+                app:iconTint="#170885"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView55" />
+
+            <ImageView
+                android:id="@+id/imageView63"
+                android:layout_width="342dp"
+                android:layout_height="87dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.53"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/calculatebtn"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/driver_register" />
+
+            <ImageView
+                android:id="@+id/imageView64"
+                android:layout_width="178dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginBottom="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/imageView63"
+                app:layout_constraintTop_toTopOf="@+id/imageView63"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/drivermain" />
+
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="122dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="24dp"
+                android:text="Total Payment"
+                android:textColor="#120101"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/imageView64"
+                app:layout_constraintTop_toTopOf="@+id/imageView64" />
+
+            <ImageView
+                android:id="@+id/imageView66"
+                android:layout_width="126dp"
+                android:layout_height="46dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginEnd="10dp"
+                app:layout_constraintEnd_toEndOf="@+id/imageView63"
+                app:layout_constraintTop_toTopOf="@+id/imageView63"
+                app:srcCompat="@drawable/calculate" />
+
+            <EditText
+                android:id="@+id/totalpayment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="20dp"
+                android:minHeight="48dp"
+                android:text="LKR.7500.00"
+                android:textColor="#0E0000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/imageView66"
+                app:layout_constraintTop_toTopOf="@+id/imageView66" />
+
+            <ImageView
+                android:id="@+id/imageView67"
+                android:layout_width="150dp"
+                android:layout_height="44dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="24dp"
+                app:layout_constraintStart_toStartOf="@+id/imageView55"
+                app:layout_constraintTop_toTopOf="@+id/imageView55"
+                app:srcCompat="@drawable/drivermain" />
+
+            <TextView
+                android:id="@+id/textView29"
+                android:layout_width="145dp"
+                android:layout_height="29dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="8dp"
+                android:text="Enter customer id"
+                android:textColor="#120101"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@+id/imageView67"
+                app:layout_constraintTop_toTopOf="@+id/imageView67" />
+
+            <ImageView
+                android:id="@+id/imageView68"
+                android:layout_width="119dp"
+                android:layout_height="46dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintEnd_toEndOf="@+id/imageView55"
+                app:layout_constraintTop_toTopOf="@+id/imageView55"
+                app:srcCompat="@drawable/calculate" />
+
+            <EditText
+                android:id="@+id/cusNamePayment"
+                android:layout_width="81dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:text="1234"
+                android:textColor="#120101"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@+id/imageView68"
+                app:layout_constraintTop_toTopOf="@+id/imageView68" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

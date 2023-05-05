@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomePageActivity">
+
+    <ImageView
+        android:id="@+id/main_topic"
+        android:layout_width="486dp"
+        android:layout_height="635dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.781"
+        app:srcCompat="@drawable/back_dp" />
+
+    <TextView
+        android:id="@+id/homge_topic"
+        android:layout_width="268dp"
+        android:layout_height="121dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/almendra_sc"
+        android:text="@string/home_topic"
+        android:textColor="@color/home_topic"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.664"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/driverButton"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="160dp"
+        android:background="@drawable/driver_register"
+        android:contentDescription="Click on the button"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/drivers_ic" />
+
+    <ImageButton
+        android:id="@+id/hotelButton"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="136dp"
+        android:background="@drawable/driver_register"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@+id/driverButton"
+        app:layout_constraintTop_toTopOf="@+id/homge_topic"
+        app:srcCompat="@drawable/hotel_i"
+        android:contentDescription="Click on the button"/>
+
+    <ImageButton
+        android:id="@+id/guideButton"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="136dp"
+        android:background="@drawable/driver_register"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.36"
+        app:layout_constraintStart_toEndOf="@+id/placesButton"
+        app:layout_constraintTop_toTopOf="@+id/homge_topic"
+        app:srcCompat="@drawable/guide_i"
+        android:contentDescription="Click on the button"/>
+
+    <ImageButton
+        android:id="@+id/placesButton"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="136dp"
+        android:background="@drawable/driver_register"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@+id/hotelButton"
+        app:layout_constraintTop_toTopOf="@+id/homge_topic"
+        app:srcCompat="@drawable/places_i"
+        android:contentDescription="Click on the button"/>
+
+    <TextView
+        android:id="@+id/home_topic2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/akaya_telivigala"
+        android:text="@string/home_topic2"
+        android:textColor="@color/home_topic2"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.076"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hotelButton" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="357dp"
+        android:layout_height="613dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.954"
+        app:layout_constraintStart_toEndOf="@+id/driverButton"
+        app:layout_constraintTop_toBottomOf="@+id/homge_topic"
+        app:layout_constraintVertical_bias="0.383"
+        app:srcCompat="@drawable/hban" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

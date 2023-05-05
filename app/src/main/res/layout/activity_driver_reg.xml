@@ -1,0 +1,195 @@
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/vty"
+    tools:layout_editor_absoluteX="24dp"
+    tools:layout_editor_absoluteY="0dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/DriveLoginImg"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/drivermain"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/Drivertxt1"
+        style="@style/Widget.AppCompat.TextView.SpinnerItem"
+        android:layout_width="308dp"
+        android:layout_height="36dp"
+
+        android:layout_marginStart="8dp"
+        android:text="Drivers and vegicle Registraion"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="@+id/DriveLoginImg"
+        app:layout_constraintTop_toTopOf="@+id/DriveLoginImg" />
+
+    <ImageView
+        android:id="@+id/dirvermain1"
+        android:layout_width="210dp"
+        android:layout_height="119dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/drivers"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="375dp"
+        android:layout_height="392dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginEnd="29dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.59"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dirvermain1"
+        app:srcCompat="@drawable/driver_register"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/driverloginTopic"
+        android:layout_width="199dp"
+        android:layout_height="23dp"
+
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="92dp"
+        android:text="Personal Details"
+        android:textColor="#1C0740"
+        android:textColorLink="#9C27B0"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toStartOf="@+id/dirvermain1"
+        app:layout_constraintHorizontal_bias="0.278"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DriveLoginImg"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/driverName"
+        android:layout_width="315dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/details_driver"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Name"
+        app:layout_constraintEnd_toEndOf="@+id/imageView10"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintStart_toStartOf="@+id/imageView10"
+        app:layout_constraintTop_toBottomOf="@+id/dirvermain1" />
+
+    <EditText
+        android:id="@+id/driverBirth"
+        android:layout_width="313dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="76dp"
+        android:background="@drawable/details_driver"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Date Of Birth"
+        app:layout_constraintEnd_toEndOf="@+id/imageView10"
+        app:layout_constraintHorizontal_bias="0.29"
+        app:layout_constraintStart_toStartOf="@+id/imageView10"
+        app:layout_constraintTop_toBottomOf="@+id/dirvermain1" />
+
+
+    <EditText
+        android:id="@+id/driverGender"
+        android:layout_width="313dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="140dp"
+        android:background="@drawable/details_driver"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Gender"
+        app:layout_constraintEnd_toEndOf="@+id/imageView10"
+        app:layout_constraintHorizontal_bias="0.29"
+        app:layout_constraintStart_toStartOf="@+id/imageView10"
+        app:layout_constraintTop_toBottomOf="@+id/dirvermain1" />
+
+    <EditText
+        android:id="@+id/driverEmail"
+        android:layout_width="316dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="196dp"
+        android:background="@drawable/details_driver"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Email"
+        app:layout_constraintEnd_toEndOf="@+id/imageView10"
+        app:layout_constraintHorizontal_bias="0.338"
+        app:layout_constraintStart_toStartOf="@+id/imageView10"
+        app:layout_constraintTop_toBottomOf="@+id/dirvermain1" />
+
+    <EditText
+        android:id="@+id/driverpwd"
+        android:layout_width="313dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/details_driver"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Password"
+        app:layout_constraintEnd_toEndOf="@+id/imageView10"
+        app:layout_constraintHorizontal_bias="0.29"
+        app:layout_constraintStart_toStartOf="@+id/imageView10"
+        app:layout_constraintTop_toBottomOf="@+id/driverEmail" />
+
+    <Button
+        android:id="@+id/driverbtn"
+        android:layout_width="240dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#020A35"
+        android:drawableLeft="@drawable/baseline_arrow_back_24"
+        android:drawableRight="@drawable/baseline_arrow_forward_24"
+        android:text="submit"
+
+        android:textColor="#00BCD4"
+        app:cornerRadius="20dp"
+        app:iconTint="#170885"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.472"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView10" />
+
+    <EditText
+        android:id="@+id/driverRegaddress"
+        android:layout_width="313dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/details_driver"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Address"
+        app:layout_constraintEnd_toEndOf="@+id/imageView10"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/driverpwd"
+        app:layout_constraintTop_toBottomOf="@+id/driverpwd" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

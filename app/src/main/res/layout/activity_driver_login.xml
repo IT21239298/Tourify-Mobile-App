@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DriverLoginActivity">
+
+    <ImageView
+        android:id="@+id/DriveLoginImg"
+        android:layout_width="486dp"
+        android:layout_height="980dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.239"
+        app:srcCompat="@drawable/login" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="198dp"
+        android:layout_height="147dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/log_img" />
+
+    <TextView
+        android:id="@+id/driverloginTopic"
+        android:layout_width="378dp"
+        android:layout_height="70dp"
+        android:fontFamily="@font/aclonica"
+        android:text="@string/driverloginTopic"
+        android:textColor="@color/home_topic"
+        android:textSize="@dimen/driverloginTopic"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+    <TextView
+        android:id="@+id/driverTopic2"
+        android:layout_width="278dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/driverTopic2"
+        android:textColor="@color/home_topic"
+        android:textSize="@dimen/driverTopic2"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.12"
+        app:layout_constraintStart_toStartOf="@+id/DriveLoginImg"
+        app:layout_constraintTop_toBottomOf="@+id/driverloginTopic" />
+
+    <EditText
+        android:id="@+id/DriverLoginEmail"
+        android:layout_width="312dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/driver_register"
+        android:drawableStart="@drawable/baseline_email_24"
+        android:ems="10"
+        android:hint="@string/LoginEmail"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/Logincolor"
+        android:textSize="28sp"
+
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/driverTopic2" />
+
+    <EditText
+        android:id="@+id/DriverLoginpwd"
+        android:layout_width="312dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/driver_register"
+        android:drawableStart="@drawable/baseline_lock_24"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/DriverLoginpwd"
+        android:textColorHint="@color/Logincolor"
+        android:textSize="28sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DriverLoginEmail" />
+
+    <TextView
+        android:id="@+id/DontHaveAccount"
+        android:layout_width="195dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/DontHaveAccount"
+        android:textColor="#FDF6F6"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Loginbtn" />
+
+    <TextView
+        android:id="@+id/Singupbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="104dp"
+        android:text="@string/Singup"
+        android:textColor="#FDF6F6"
+        android:textSize="23sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Loginbtn" />
+
+    <Button
+        android:id="@+id/Loginbtn"
+        android:layout_width="227dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#020A35"
+        android:text="Login"
+        android:textColor="#00BCD4"
+        android:textColorHint="#051573"
+        android:textSize="24sp"
+        app:cornerRadius="20dp"
+        app:iconTint="#170885"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DriverLoginpwd" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
