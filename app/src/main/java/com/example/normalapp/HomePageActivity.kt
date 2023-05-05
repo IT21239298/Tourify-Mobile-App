@@ -30,7 +30,7 @@ class HomePageActivity : AppCompatActivity() {
         }
         val forthActButton = findViewById<ImageButton>(R.id.guideButton)
         forthActButton.setOnClickListener{
-            val Intent = Intent(this,GouidLoginActivity::class.java)
+            val Intent = Intent(this,GuideLogin::class.java)
             startActivity(Intent)
         }
 
