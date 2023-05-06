@@ -27,10 +27,10 @@
             android:name=".HotelLoginActivity"
             android:exported="false" />
         <activity
-            android:name=".HomePageActivity"
+            android:name=".DashboardActivity"
             android:exported="false" />
         <activity
-            android:name=".DashboardActivity"
+            android:name=".GuidePayment"
             android:exported="false" />
         <activity
             android:name=".DriverRegActivity"
@@ -54,7 +54,11 @@
             android:name=".GuideLogin"
             android:exported="true" />
         <activity
+<<<<<<< Updated upstream
             android:name=".MainActivity"
+=======
+            android:name=".HomePageActivity"
+>>>>>>> Stashed changes
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
