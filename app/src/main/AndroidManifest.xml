@@ -52,6 +52,33 @@
         <activity
             android:name=".GuideLogin"
             android:exported="true"/>
+        <activity
+            android:name=".COTPveryfication"
+            android:exported="false" />
+        <activity
+            android:name=".CForgetpassword"
+            android:exported="false" />
+        <activity
+            android:name=".CDriver"
+            android:exported="false" />
+        <activity
+            android:name=".CDeleteAccount"
+            android:exported="false" />
+        <activity
+            android:name=".CAssignDriver"
+            android:exported="false" />
+        <activity
+            android:name=".CAccount"
+            android:exported="false" />
+        <activity
+            android:name=".CSignup"
+            android:exported="false" />
+        <activity
+            android:name=".Cwelcome"
+            android:exported="false" />
+        <activity
+            android:name=".CMainActivity"
+            android:exported="false" />
 
         <activity
             android:name=".MainActivity"
