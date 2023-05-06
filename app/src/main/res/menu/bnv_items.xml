@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/mainFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="HomePage" />
+
+    <item
+        android:id="@+id/likeFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_heart_svgrepo_com"
+        android:title="LikePage" />
+
+    <item
+        android:id="@+id/cartFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_shopping_cart_24"
+        android:title="CartPage" />
+
+    <item
+        android:id="@+id/profileFragment"
+        android:enabled="true"
+        android:icon="@drawable/logout_svg"
+        android:title="ProfilePage" />
+
+</menu>

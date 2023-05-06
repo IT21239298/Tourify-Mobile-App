@@ -49,4 +49,9 @@
     <string name="tvGaccount">Account number</string>
     <string name="tvGusername1">email</string>
     <string name="profileGemail">Email</string>
+
+    <!--Akila-->
+    <string name="app_name">Tourify</string>
+    <string name="like">Like</string>
+    <string name="JordanDesciption">A luxurious 5 Star City Hotel located in the center of Colombo and in the heart of tourist and commercial hubs like the World Trade Centre, National Museum and Iconic temples.</string>
 </resources>

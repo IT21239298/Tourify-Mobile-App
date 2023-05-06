@@ -18,5 +18,10 @@
     <color name="profileNameG">#C5C6CA</color>
     <color name="loginG">#7C4DFF</color>
 
+    <!-- Akila -->
+
+    <color name="grayishWhite">#F1EDED</color>
+    <color name="greyishtext">#474444</color>
+    <color name="statusbar">#ffffff</color>
 
 </resources>
