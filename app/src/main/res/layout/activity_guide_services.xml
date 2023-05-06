@@ -56,9 +56,9 @@
         android:id="@+id/imageView6"
         android:layout_width="@dimen/bgGW"
         android:layout_height="@dimen/pGH"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="12dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintHorizontal_bias="0.509"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvProfile3"
         app:srcCompat="@drawable/bg3" />
@@ -68,10 +68,10 @@
         android:layout_width="@dimen/btnGprofileW"
         android:layout_height="@dimen/btnGprofile"
         android:layout_marginStart="32dp"
-        android:backgroundTint="@color/profileGtopic"
         android:layout_marginTop="32dp"
-        android:scaleType="fitCenter"
+        android:backgroundTint="@color/profileGtopic"
         android:contentDescription="click on profile"
+        android:scaleType="fitCenter"
         app:layout_constraintStart_toStartOf="@+id/imageView6"
         app:layout_constraintTop_toBottomOf="@+id/tvProfile3"
         app:srcCompat="@drawable/profile1" />
@@ -106,29 +106,47 @@
         android:id="@+id/servicesGTV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="12dp"
         android:fontFamily="@font/alike"
         android:text="@string/serviceGTV"
         android:textColor="#0E0D0D"
         android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/imageView6"
+        app:layout_constraintHorizontal_bias="0.064"
         app:layout_constraintStart_toStartOf="@+id/imageView6"
         app:layout_constraintTop_toBottomOf="@+id/imgbtnG2" />
 
+    <ScrollView
+        android:layout_width="360dp"
+        android:layout_height="384dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/servicesGTV">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="355dp"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/guide_service_list" />
+    </ScrollView>
+
     <Button
-        android:id="@+id/addPackagebtnG"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="56dp"
-        android:layout_marginEnd="104dp"
+        android:id="@+id/newAddbttn"
+        android:layout_width="129dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="8dp"
         android:backgroundTint="#020A35"
-        android:text="@string/addPackagebtnG"
+        android:drawableRight="@drawable/baseline_add_circle_24"
+        android:text="Add new packages"
         android:textColor="#00BCD4"
         android:textColorHint="#051573"
+        android:textSize="10sp"
         app:cornerRadius="20dp"
         app:iconTint="#170885"
-        app:layout_constraintEnd_toEndOf="@+id/imageView6"
-        app:layout_constraintTop_toBottomOf="@+id/servicesGTV" />
+        app:layout_constraintStart_toEndOf="@+id/servicesGTV"
+        app:layout_constraintTop_toBottomOf="@+id/imgBtnG3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

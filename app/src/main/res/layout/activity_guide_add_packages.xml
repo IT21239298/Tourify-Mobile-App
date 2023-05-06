@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/vty"
+    tools:context=".guideAddPackages">
+
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="255dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/alegreya_sc_bold"
+        android:text="Add Packages"
+        android:textColor="#030F50"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/guidepackagetypetv"
+        android:layout_width="300dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="52dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/edit_text_bg"
+        app:layout_constraintStart_toStartOf="parent"
+        android:contentDescription="tour type"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <EditText
+        android:id="@+id/packageDescriptiontv"
+        android:layout_width="304dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Description "
+        android:background="@drawable/edit_text_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guidepackagetypetv" />
+
+    <EditText
+        android:id="@+id/tourPricetv"
+        android:layout_width="304dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:background="@drawable/edit_text_bg"
+        android:inputType="textPersonName"
+        android:hint="Price"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/packageDescriptiontv" />
+
+    <Button
+        android:id="@+id/btnAddTour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Add Pacakge"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tourPricetv" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

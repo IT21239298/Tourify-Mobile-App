@@ -12,12 +12,14 @@
         android:theme="@style/Theme.NormalApp"
         tools:targetApi="31">
         <activity
+            android:name=".GuideServices"
+            android:exported="false" />
+        <activity
             android:name=".DriverPaymentActivity"
             android:exported="false" />
         <activity
             android:name=".DriverLoginActivity"
             android:exported="false" />
-
         <activity
             android:name=".PlacesHomeActivity"
             android:exported="false" />
@@ -30,7 +32,6 @@
         <activity
             android:name=".DashboardActivity"
             android:exported="false" />
-
         <activity
             android:name=".DriverRegActivity"
             android:exported="false" />
@@ -41,7 +42,7 @@
             android:name=".GuideRegister1"
             android:exported="false" />
         <activity
-            android:name=".GuideServices"
+            android:name=".guideAddPackages"
             android:exported="false" />
         <activity
             android:name=".GuidePayment"
@@ -51,8 +52,7 @@
             android:exported="false" />
         <activity
             android:name=".GuideLogin"
-            android:exported="true"/>
-
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
