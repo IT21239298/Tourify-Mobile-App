@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="465dp"
+        android:layout_height="703dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/driver_prf_back" />
+
+    <TextView
+        android:id="@+id/edittopic"
+        android:layout_width="302dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/aclonica"
+        android:text="Edit Details"
+        android:textColor="#F8F6F6"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.651"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/drivereditname"
+        android:layout_width="312dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/driver_register"
+        android:ems="10"
+        android:hint="  Name"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/Logincolor"
+
+        android:textSize="28sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edittopic" />
+
+    <EditText
+        android:id="@+id/drivereditaddress"
+        android:layout_width="312dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="20dp"
+
+        android:background="@drawable/driver_register"
+        android:ems="10"
+        android:hint="  Address"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/Logincolor"
+
+        android:textSize="28sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/drivereditname" />
+
+    <EditText
+        android:id="@+id/drivereditEmail"
+        android:layout_width="312dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="20dp"
+
+        android:background="@drawable/driver_register"
+        android:ems="10"
+        android:hint="  Email"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/Logincolor"
+
+        android:textSize="28sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/drivereditaddress" />
+
+    <EditText
+        android:id="@+id/drivereditbith"
+        android:layout_width="312dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="20dp"
+
+        android:background="@drawable/driver_register"
+        android:ems="10"
+        android:hint="  Birthday"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/Logincolor"
+
+        android:textSize="28sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/drivereditEmail" />
+
+    <EditText
+        android:id="@+id/drivereditgender"
+        android:layout_width="312dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="20dp"
+
+        android:background="@drawable/driver_register"
+        android:ems="10"
+        android:hint="  Gender"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/Logincolor"
+
+        android:textSize="28sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/drivereditbith" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="150dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#020A35"
+        android:text="edit"
+        android:textColor="#00BCD4"
+        android:textColorHint="#051573"
+        android:textSize="24sp"
+        app:cornerRadius="20dp"
+        app:iconTint="#170885"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/drivereditgender" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="227dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#020A35"
+        android:text="Cancel"
+        android:textColor="#D40000"
+        android:textColorHint="#051573"
+        android:textSize="24sp"
+        app:cornerRadius="20dp"
+        app:iconTint="#170885"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
