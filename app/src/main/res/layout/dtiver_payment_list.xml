@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="340dp"
+    android:layout_height="200dp"
+    android:layout_margin="10dp"
+    android:backgroundTint="#B4CDF6"
+    app:cardCornerRadius="20dp">
+
+    <LinearLayout
+        android:layout_width="485dp"
+        android:layout_height="146dp"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/totalinName"
+            android:layout_width="380dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/driver_register"
+            android:text=" Name"
+
+            android:textColor="#05176C"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="60dp"
+            android:layout_height="31dp"
+            android:layout_marginStart="16dp"
+            android:text=" LKR."
+            android:textColor="#070000"
+            android:textSize="24sp"
+            android:textStyle="bold|italic" />
+
+        <EditText
+            android:id="@+id/totalvalue"
+            android:layout_width="380dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/driver_register"
+            android:text=" Total"
+
+            android:textColor="#F40428"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+
+
+
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/driveracclistdeletebtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+       android:layout_marginLeft="150dp"
+        android:layout_marginTop="150dp"
+        app:srcCompat="@drawable/baseline_delete_24" />
+</androidx.cardview.widget.CardView>

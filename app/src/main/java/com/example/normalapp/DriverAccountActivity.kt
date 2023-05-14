@@ -32,7 +32,7 @@ class DriverAccountActivity : AppCompatActivity() {
                             usersArrayList.add(user!!)
                         }
                     }
-                    recyclerView.adapter= DriverAdpterPayment(usersArrayList)
+                    recyclerView.adapter= DriverAdapterPayment(usersArrayList)
 
 
 

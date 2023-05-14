@@ -100,25 +100,17 @@
         app:layout_constraintStart_toStartOf="@+id/imageView12"
         app:layout_constraintTop_toBottomOf="@+id/totalWallet" />
 
-    <ScrollView
-        android:layout_width="392dp"
-        android:layout_height="300dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="20dp"
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/driverAccount"
+        android:layout_width="356dp"
+        android:layout_height="332dp"
+        android:layout_marginTop="260dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.709"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView12"
-        tools:ignore="ExtraText,MissingConstraints">
+        app:layout_constraintTop_toTopOf="parent"
+        tools:listitem="@layout/dtiver_payment_list" />
 
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/driverAccount"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:listitem="@layout/driver_payment_list" />
-
-
-    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

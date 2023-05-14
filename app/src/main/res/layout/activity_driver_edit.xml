@@ -32,13 +32,13 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/drivereditname"
         android:layout_width="312dp"
         android:layout_height="55dp"
         android:layout_marginTop="24dp"
         android:background="@drawable/driver_register"
         android:ems="10"
-        android:hint="  Name"
+        android:hint="  Name  dfdsdfsdfsfsfsf"
         android:inputType="textPersonName"
         android:textColorHint="@color/Logincolor"
 
@@ -50,7 +50,7 @@
         app:layout_constraintTop_toBottomOf="@+id/edittopic" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/drivereditaddress"
         android:layout_width="312dp"
         android:layout_height="55dp"
         android:layout_marginTop="20dp"
@@ -66,10 +66,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+        app:layout_constraintTop_toBottomOf="@+id/drivereditname" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName3"
+        android:id="@+id/drivereditEmail"
         android:layout_width="312dp"
         android:layout_height="55dp"
         android:layout_marginTop="20dp"
@@ -85,10 +85,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+        app:layout_constraintTop_toBottomOf="@+id/drivereditaddress" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName4"
+        android:id="@+id/drivereditbith"
         android:layout_width="312dp"
         android:layout_height="55dp"
         android:layout_marginTop="20dp"
@@ -104,10 +104,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3" />
+        app:layout_constraintTop_toBottomOf="@+id/drivereditEmail" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName5"
+        android:id="@+id/drivereditgender"
         android:layout_width="312dp"
         android:layout_height="55dp"
         android:layout_marginTop="20dp"
@@ -123,7 +123,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4" />
+        app:layout_constraintTop_toBottomOf="@+id/drivereditbith" />
 
     <Button
         android:id="@+id/buttnedit"
@@ -140,7 +140,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName5" />
+        app:layout_constraintTop_toBottomOf="@+id/drivereditgender" />
 
     <Button
         android:id="@+id/btneditcancel"
