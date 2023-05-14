@@ -11,9 +11,9 @@ import androidx.recyclerview.widget.RecyclerView
 class GuideAdapter(val guideList:ArrayList<TourTypes>): RecyclerView.Adapter<GuideAdapter.GuideViewHolder>() {
     class GuideViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
-
+        val tvTourTypes:TextView=itemView.findViewById(R.id.packageTourTypetv)
         val  tvDescription:TextView = itemView.findViewById(R.id.packageDescriptiontv)
-        val tvprice:TextView=itemView.findViewById(R.id.tourPricetv)
+        val tvprice:TextView=itemView.findViewById(R.id.packagePricetv)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): GuideViewHolder {
@@ -22,7 +22,7 @@ class GuideAdapter(val guideList:ArrayList<TourTypes>): RecyclerView.Adapter<Gui
     }
 
     override fun onBindViewHolder(holder: GuideViewHolder, position: Int) {
-
+        holder.tvTourTypes.text=guideList[position].tourType
         holder.tvDescription.text=guideList[position].description
         holder.tvprice.text=guideList[position].tourPrice
 
