@@ -4,16 +4,11 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
-import android.widget.EditText
-import android.widget.Spinner
-import android.widget.TextView
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.google.firebase.auth.ktx.auth
 import com.google.firebase.database.*
-import com.google.firebase.database.ktx.database
-import com.google.firebase.ktx.Firebase
+
 
 class GuideServices : AppCompatActivity() {
 
@@ -26,19 +21,23 @@ class GuideServices : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_guide_services)
 
-        recyclerViewG =findViewById(R.id.recyclerView)
+        recyclerViewG =findViewById(R.id.guideView)
         recyclerViewG.layoutManager=LinearLayoutManager(this)
-
-        btnAddNew=findViewById(R.id.newAddbttn)
-        btnAddNew.setOnClickListener {
-            val intent = Intent(this,guideAddPackages::class.java)
-            startActivity(intent)
-        }
 
         guidesArrayList = arrayListOf()
 
+
+        btnAddNew=findViewById(R.id.newAddbttn)
+      btnAddNew.setOnClickListener {
+          val intent = Intent(this,guideAddPackages::class.java)
+           startActivity(intent)
+       }
         database = FirebaseDatabase.getInstance().getReference("TourTypes")
         database.addValueEventListener(object :ValueEventListener{
+
+
+
+
             override fun onDataChange(snapshot: DataSnapshot) {
 
                 if(snapshot.exists()){

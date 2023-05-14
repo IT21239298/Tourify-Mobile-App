@@ -29,4 +29,6 @@
     <dimen name="GloginbtnH">57dp</dimen>
     <dimen name="editEmail">300dp</dimen>
     <dimen name="editEmailH">50dp</dimen>
+    <dimen name="placew">300dp</dimen>
+    <dimen name="placeh">55dp</dimen>
 </resources>

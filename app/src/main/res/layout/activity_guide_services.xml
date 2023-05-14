@@ -126,7 +126,7 @@
         app:layout_constraintTop_toBottomOf="@+id/servicesGTV">
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerView"
+            android:id="@+id/guideView"
             android:layout_width="355dp"
             android:layout_height="wrap_content"
             tools:listitem="@layout/guide_service_list" />

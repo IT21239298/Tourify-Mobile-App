@@ -14,6 +14,15 @@
         android:orientation="vertical">
 
         <EditText
+            android:id="@+id/packageTourTypetv"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textStyle="bold"
+            android:text="Tour type" />
+
+        <EditText
             android:id="@+id/packageDescriptiontv"
             android:layout_width="match_parent"
             android:layout_height="50dp"
@@ -30,6 +39,8 @@
             android:inputType="textPersonName"
             android:text="Price"
             android:textStyle="bold" />
+
+
 
 
     </LinearLayout>
