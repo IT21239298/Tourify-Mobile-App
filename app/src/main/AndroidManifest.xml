@@ -17,7 +17,18 @@
         <activity
             android:name=".DriverLoginActivity"
             android:exported="false" />
-
+        <activity
+            android:name=".DriverNotificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DriverVehicleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DriverAccountActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DriverRegActivity"
+            android:exported="false" />
         <activity
             android:name=".PlacesHomeActivity"
             android:exported="false" />
@@ -31,9 +42,6 @@
             android:name=".DashboardActivity"
             android:exported="false" />
 
-        <activity
-            android:name=".DriverRegActivity"
-            android:exported="false" />
         <activity
             android:name=".guideEditSheet"
             android:exported="false" />
