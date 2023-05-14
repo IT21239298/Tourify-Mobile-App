@@ -170,7 +170,7 @@
     <Button
         android:id="@+id/button3"
         android:layout_width="149dp"
-        android:layout_height="44dp"
+        android:layout_height="48dp"
         android:layout_marginTop="12dp"
         android:backgroundTint="#020A35"
         android:text="edit"
