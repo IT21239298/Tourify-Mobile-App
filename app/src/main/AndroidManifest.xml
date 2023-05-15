@@ -11,6 +11,25 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NormalApp"
         tools:targetApi="31">
+
+        <activity
+            android:name=".CBookDriver"
+            android:exported="false" />
+        <activity
+            android:name=".CAssignDriver"
+            android:exported="false" />
+        <activity
+            android:name=".CEditProfile"
+            android:exported="false" />
+        <activity
+            android:name=".CustProfile"
+            android:exported="false" />
+        <activity
+            android:name=".CRegister"
+            android:exported="false" />
+        <activity
+            android:name=".CMainActivity"
+            android:exported="false"/>
         <activity
             android:name=".CustomerLogin"
             android:exported="false" />

@@ -69,13 +69,13 @@
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.36"
-        app:layout_constraintStart_toEndOf="@+id/placesButton"
+        app:layout_constraintStart_toEndOf="@+id/customerButton"
         app:layout_constraintTop_toTopOf="@+id/homge_topic"
         app:srcCompat="@drawable/guide_i"
         android:contentDescription="Click on the button"/>
 
     <ImageButton
-        android:id="@+id/placesButton"
+        android:id="@+id/customerButton"
         android:layout_width="75dp"
         android:layout_height="75dp"
         android:layout_marginStart="24dp"

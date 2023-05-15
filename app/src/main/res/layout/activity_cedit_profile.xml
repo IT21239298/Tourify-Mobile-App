@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/vty"
+    tools:context=".CEditProfile">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/baseline_arrow_back_24"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/cEditt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Edit Details"
+        android:textSize="46sp"
+        android:textStyle="bold"
+        android:textColor="#2A0A85"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="68dp"
+        tools:ignore="MissingConstraints" />
+
+
+    <EditText
+        android:id="@+id/CEprofile1"
+        android:layout_width="301dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="176dp"
+        android:background="@drawable/edit_text_bg"
+        android:drawableStart="@drawable/baseline_person_24"
+        android:drawableEnd="@drawable/baseline_edit_24"
+        android:hint="Name"
+        android:textColorHint="@color/black"
+        android:textSize="23sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cEditt1" />
+
+    <EditText
+        android:id="@+id/CEprofile2"
+        android:layout_width="301dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/edit_text_bg"
+        android:drawableStart="@drawable/baseline_location_on_24"
+        android:drawableEnd="@drawable/baseline_edit_24"
+        android:hint="Country"
+        android:textColorHint="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CEprofile1" />
+
+    <EditText
+        android:id="@+id/CEprofile3"
+        android:layout_width="301dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edit_text_bg"
+        android:drawableStart="@drawable/baseline_email_24"
+        android:drawableEnd="@drawable/baseline_edit_24"
+        android:hint="Email"
+        android:textColorHint="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CEprofile2" />
+
+    <Button
+        android:id="@+id/cEditbtn1"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#358318"
+        android:drawableEnd="@drawable/baseline_edit_24"
+        android:text="EDIT"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.059"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CEprofile3" />
+
+    <Button
+        android:id="@+id/cEditbtn2"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="130dp"
+        android:layout_marginBottom="44dp"
+        android:backgroundTint="#020A35"
+        android:text="CANCEL"
+        android:textColor="#00BCD4"
+        android:textColorHint="#051573"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.059"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cEditbtn1"
+        app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

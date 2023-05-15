@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/vty"
+    tools:context=".CBookDriver">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/baseline_arrow_back_24"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/CBookD1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="serif"
+        android:text="ASSIGN Drivers"
+        android:textColor="#2A0A85"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/CBookImg1"
+        android:layout_width="121dp"
+        android:layout_height="131dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CBookD1"
+        app:srcCompat="@drawable/cd" />
+
+    <TextView
+        android:id="@+id/CBookD2"
+        android:layout_width="301dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edit_text_bg"
+        android:drawableStart="@drawable/baseline_person_24"
+        android:hint="Driver ID"
+        android:textColorHint="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CBookImg1" />
+
+    <TextView
+        android:id="@+id/CBookD3"
+        android:layout_width="301dp"
+        android:layout_height="43dp"
+        android:background="@drawable/edit_text_bg"
+        android:drawableStart="@drawable/baseline_contact_phone_24"
+        android:hint="Contact Number"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.462"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CBookD2"/>
+
+    <TextView
+        android:id="@+id/CBookD4"
+        android:layout_width="301dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/edit_text_bg"
+        android:drawableStart="@drawable/baseline_drive_eta_24"
+        android:hint="Vehicle Type"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CBookD3" />
+
+    <EditText
+        android:id="@+id/CBookDE1"
+        android:layout_width="301dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/cardviewbg"
+        android:drawableStart="@drawable/baseline_location_on_24"
+        android:ems="10"
+        android:hint="Enter Drop Location"
+        android:inputType="text"
+        android:textColorHint="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CBookD4" />
+
+    <EditText
+        android:id="@+id/CBookDE2"
+        android:layout_width="301dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/cardviewbg"
+        android:drawableStart="@drawable/baseline_date_range_24"
+        android:ems="10"
+        android:hint="Enter Date"
+        android:inputType="text"
+        android:textColorHint="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CBookDE1" />
+
+    <EditText
+        android:id="@+id/CBookDE3"
+        android:layout_width="301dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/cardviewbg"
+        android:drawableStart="@drawable/baseline_access_time_24"
+        android:ems="10"
+        android:hint="Enter Time"
+        android:inputType="text"
+        android:textColorHint="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CBookDE2" />
+
+    <Button
+        android:id="@+id/CBookBtn1"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="104dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#020A35"
+        android:text="BOOK DRIVER"
+        android:textColor="#00BCD4"
+        android:textColorHint="#051573"
+        android:textSize="20sp"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CBookDE3"
+        app:layout_constraintVertical_bias="1.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>
