@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/pNametv"
+            android:layout_width="@dimen/placew"
+            android:layout_height="@dimen/placeh"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/cardviewbg"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Name" />
+
+        <EditText
+            android:id="@+id/pLocationtv"
+            android:layout_width="@dimen/placew"
+            android:layout_height="@dimen/placeh"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/cardviewbg"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Location" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

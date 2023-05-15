@@ -32,7 +32,7 @@ class GuideServices : AppCompatActivity() {
           val intent = Intent(this,guideAddPackages::class.java)
            startActivity(intent)
        }
-        database = FirebaseDatabase.getInstance().getReference("TourTypes")
+        database = FirebaseDatabase.getInstance().getReference("GuideAddPackages")
         database.addValueEventListener(object :ValueEventListener{
 
 

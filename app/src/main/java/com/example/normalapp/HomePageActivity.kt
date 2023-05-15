@@ -25,9 +25,9 @@ class HomePageActivity : AppCompatActivity() {
         }
         val thirdActButton = findViewById<ImageButton>(R.id.placesButton)
         thirdActButton.setOnClickListener{
-            val Intent = Intent(this,PlacesHomeActivity::class.java)
+            val Intent = Intent(this,CustomerLogin::class.java)
             startActivity(Intent)
-        }
+            }
         val forthActButton = findViewById<ImageButton>(R.id.guideButton)
         forthActButton.setOnClickListener{
             val Intent = Intent(this,GuideLogin::class.java)

@@ -6,4 +6,44 @@
     android:layout_height="match_parent"
     tools:context=".PlacesHomeActivity">
 
+    <TextView
+        android:id="@+id/tvtopic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/akronim"
+        android:text="Visit SriLanka"
+        android:textColor="#3D2481"
+        android:textSize="55dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/addPbtn"
+        android:layout_width="58dp"
+        android:layout_height="54dp"
+android:contentDescription="add pplaces"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#071665"
+        android:drawableRight="@drawable/baseline_add_circle_24"
+        app:layout_constraintStart_toEndOf="@+id/tvtopic"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="363dp"
+        android:layout_height="515dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvtopic">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/placeRecycleview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/places_list" />
+    </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
