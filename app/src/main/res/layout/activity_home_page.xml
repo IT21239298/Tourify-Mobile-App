@@ -20,16 +20,16 @@
 
     <TextView
         android:id="@+id/homge_topic"
-        android:layout_width="268dp"
-        android:layout_height="121dp"
-        android:layout_marginTop="24dp"
+        android:layout_width="287dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="16dp"
         android:fontFamily="@font/almendra_sc"
         android:text="@string/home_topic"
         android:textColor="@color/home_topic"
         android:textSize="35sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.664"
+        app:layout_constraintHorizontal_bias="0.831"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -102,19 +102,22 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/hotelButton" />
 
-    <ImageView
+    <ImageButton
         android:id="@+id/imageView2"
-        android:layout_width="357dp"
-        android:layout_height="613dp"
+        android:layout_width="376dp"
+        android:layout_height="265dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="60dp"
         android:layout_marginEnd="20dp"
+        android:contentDescription="click to go to places"
+        android:backgroundTint="#6010ED"
+        android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.954"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/driverButton"
         app:layout_constraintTop_toBottomOf="@+id/homge_topic"
-        app:layout_constraintVertical_bias="0.383"
+        app:layout_constraintVertical_bias="0.723"
         app:srcCompat="@drawable/hban" />
 
 

@@ -24,6 +24,9 @@ class DriverRegActivity : AppCompatActivity() {
         private lateinit var driverGender:TextView
         private lateinit var driverAddres:TextView
         private lateinit var btnDriverReg:Button
+        private lateinit var  vehicleaNumber: TextView
+        private lateinit var vehicleaType:TextView
+        private lateinit var  vehicleaInsuarance:TextView
 
 
     private lateinit var auth: FirebaseAuth
@@ -34,6 +37,10 @@ class DriverRegActivity : AppCompatActivity() {
     private lateinit var sAddress: String
     private lateinit var sBirth:String
     private lateinit var sGender:String
+    private lateinit var vNumber:String
+    private lateinit var vType:String
+    private lateinit var vInsuarance:String
+
     private lateinit var database: DatabaseReference
 // ...
 
@@ -53,7 +60,11 @@ class DriverRegActivity : AppCompatActivity() {
         driverBirth = findViewById(R.id.driverBirth)
         driverGender = findViewById(R.id.driverGender)
         driverAddres = findViewById(R.id.driverRegaddress)
+        vehicleaNumber= findViewById(R.id.dvehiclenumber)
+        vehicleaType= findViewById(R.id.dvehicletype)
+        vehicleaInsuarance= findViewById(R.id.dvehicleinsuarnce)
         btnDriverReg = findViewById(R.id.driverbtn)
+
 
         btnDriverReg.setOnClickListener{
 
@@ -91,8 +102,11 @@ class DriverRegActivity : AppCompatActivity() {
         sAddress = driverAddres.text.toString().trim()
         sBirth = driverBirth.text.toString().trim()
         sGender = driverGender.text.toString().trim()
+        vNumber = vehicleaNumber.text.toString().trim()
+        vType = vehicleaType.text.toString().trim()
+        vInsuarance = vehicleaInsuarance.text.toString().trim()
 
-val userDriver = UserDriverModel(sEmail,sName,sAddress,sBirth,sGender)
+val userDriver = UserDriverModel(sEmail,sName,sAddress,sBirth,sGender,vNumber,vType,vInsuarance)
 
         val userDriverID = FirebaseAuth.getInstance().currentUser!!.uid
         database.child("UserDriver").child(userDriverID).setValue(userDriver)

@@ -7,5 +7,8 @@ data class UserDriverModel(
     val  name:String? = null,
     val address: String? = null,
     val birth:String? = null,
-    val gender:String? = null
+    val gender:String? = null,
+     val vnumber:String? = null,
+    val vtype:String? = null,
+    val vinsuarance:String? = null,
 )
