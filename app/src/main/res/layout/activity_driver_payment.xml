@@ -140,8 +140,8 @@
 
             <ImageView
                 android:id="@+id/imageView55"
-                android:layout_width="339dp"
-                android:layout_height="240dp"
+                android:layout_width="345dp"
+                android:layout_height="256dp"
                 android:layout_marginStart="44dp"
                 android:layout_marginTop="28dp"
                 android:layout_marginEnd="44dp"
@@ -155,7 +155,7 @@
                 android:layout_width="152dp"
                 android:layout_height="41dp"
                 android:layout_marginStart="16dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="16dp"
                 app:layout_constraintStart_toStartOf="@+id/imageView55"
                 app:layout_constraintTop_toBottomOf="@+id/imageView67"
                 app:srcCompat="@drawable/drivermain" />
@@ -165,7 +165,7 @@
                 android:layout_width="152dp"
                 android:layout_height="41dp"
                 android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="20dp"
                 app:layout_constraintStart_toStartOf="@+id/imageView55"
                 app:layout_constraintTop_toBottomOf="@+id/imageView56"
                 app:srcCompat="@drawable/drivermain" />
@@ -175,40 +175,10 @@
                 android:layout_width="152dp"
                 android:layout_height="41dp"
                 android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="19dp"
                 app:layout_constraintStart_toStartOf="@+id/imageView55"
                 app:layout_constraintTop_toBottomOf="@+id/imageView57"
                 app:srcCompat="@drawable/drivermain" />
-
-            <ImageView
-                android:id="@+id/imageView59"
-                android:layout_width="120dp"
-                android:layout_height="44dp"
-                android:layout_marginTop="80dp"
-                android:layout_marginEnd="20dp"
-                app:layout_constraintEnd_toEndOf="@+id/imageView55"
-                app:layout_constraintTop_toTopOf="@+id/imageView55"
-                app:srcCompat="@drawable/calculate" />
-
-            <ImageView
-                android:id="@+id/imageView60"
-                android:layout_width="119dp"
-                android:layout_height="40dp"
-                android:layout_marginTop="12dp"
-                android:layout_marginEnd="20dp"
-                app:layout_constraintEnd_toEndOf="@+id/imageView55"
-                app:layout_constraintTop_toBottomOf="@+id/imageView59"
-                app:srcCompat="@drawable/calculate" />
-
-            <ImageView
-                android:id="@+id/imageView61"
-                android:layout_width="116dp"
-                android:layout_height="42dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="24dp"
-                app:layout_constraintEnd_toEndOf="@+id/imageView55"
-                app:layout_constraintTop_toBottomOf="@+id/imageView60"
-                app:srcCompat="@drawable/calculate" />
 
             <TextView
                 android:id="@+id/textView21"
@@ -218,7 +188,8 @@
                 android:layout_marginTop="8dp"
                 android:text="Enter hour"
                 android:textColor="#120101"
-                android:textSize="16sp"
+                android:textSize="17sp"
+                android:textStyle="bold|italic"
                 app:layout_constraintStart_toStartOf="@+id/imageView56"
                 app:layout_constraintTop_toTopOf="@+id/imageView56" />
 
@@ -230,7 +201,8 @@
                 android:layout_marginTop="4dp"
                 android:text="Enter km"
                 android:textColor="#120101"
-                android:textSize="16sp"
+                android:textSize="17sp"
+                android:textStyle="bold|italic"
                 app:layout_constraintStart_toStartOf="@+id/imageView57"
                 app:layout_constraintTop_toTopOf="@+id/imageView57" />
 
@@ -240,51 +212,60 @@
                 android:layout_height="32dp"
                 android:layout_marginStart="4dp"
                 android:layout_marginTop="4dp"
-                android:text="Enter additional fees"
+                android:text="Additional fees"
                 android:textColor="#120101"
-                android:textSize="16sp"
+                android:textSize="17sp"
+                android:textStyle="bold|italic"
                 app:layout_constraintStart_toStartOf="@+id/imageView58"
                 app:layout_constraintTop_toTopOf="@+id/imageView58" />
 
             <EditText
                 android:id="@+id/enterhourpayment"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="36dp"
-                android:layout_marginTop="8dp"
+                android:layout_width="127dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/calculate"
+                android:hint="10 hour"
                 android:minWidth="48dp"
                 android:minHeight="48dp"
-                android:text="10"
-                android:textColor="#120101"
-                android:textSize="16sp"
-                app:layout_constraintStart_toStartOf="@+id/imageView59"
-                app:layout_constraintTop_toTopOf="@+id/imageView59" />
+                android:textColorHint="#120101"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/imageView55"
+                app:layout_constraintStart_toEndOf="@+id/imageView56"
+                app:layout_constraintTop_toBottomOf="@+id/cusNamePayment" />
 
             <EditText
                 android:id="@+id/enterkmPaymnt"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"
-                android:layout_marginEnd="60dp"
+                android:layout_width="127dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="46dp"
+                android:background="@drawable/calculate"
+                android:hint=" 10 Km"
                 android:minWidth="48dp"
                 android:minHeight="48dp"
-                android:text="20"
-                android:textColor="#120101"
-                android:textSize="16sp"
-                app:layout_constraintEnd_toEndOf="@+id/imageView60"
-                app:layout_constraintTop_toTopOf="@+id/imageView60" />
+                android:textColorHint="#120101"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/enterhourpayment" />
 
             <EditText
                 android:id="@+id/additinalpayment"
-                android:layout_width="111dp"
+                android:layout_width="127dp"
                 android:layout_height="48dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="16dp"
-                android:text="LKR.2000.00"
-                android:textColor="#120101"
-                android:textSize="16sp"
-                app:layout_constraintEnd_toEndOf="@+id/imageView61"
-                app:layout_constraintTop_toTopOf="@+id/imageView61" />
+                android:layout_marginStart="26dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/calculate"
+                android:hint=" LKR.1000.00"
+                android:minWidth="48dp"
+                android:minHeight="48dp"
+                android:textColorHint="#120101"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/imageView58"
+                app:layout_constraintTop_toBottomOf="@+id/enterkmPaymnt" />
 
             <Button
                 android:id="@+id/calculatebtn"
@@ -383,32 +364,28 @@
                 android:layout_height="29dp"
                 android:layout_marginStart="4dp"
                 android:layout_marginTop="8dp"
-                android:text="Enter customer id"
+                android:text=" Customer Name"
                 android:textColor="#120101"
-                android:textSize="16sp"
+                android:textSize="17sp"
+                android:textStyle="bold|italic"
                 app:layout_constraintStart_toStartOf="@+id/imageView67"
                 app:layout_constraintTop_toTopOf="@+id/imageView67" />
 
-            <ImageView
-                android:id="@+id/imageView68"
-                android:layout_width="119dp"
-                android:layout_height="46dp"
-                android:layout_marginTop="24dp"
-                android:layout_marginEnd="16dp"
-                app:layout_constraintEnd_toEndOf="@+id/imageView55"
-                app:layout_constraintTop_toTopOf="@+id/imageView55"
-                app:srcCompat="@drawable/calculate" />
-
             <EditText
                 android:id="@+id/cusNamePayment"
-                android:layout_width="81dp"
+                android:layout_width="127dp"
                 android:layout_height="48dp"
-                android:layout_marginTop="8dp"
-                android:text="1234"
-                android:textColor="#120101"
-                android:textSize="16sp"
-                app:layout_constraintEnd_toEndOf="@+id/imageView68"
-                app:layout_constraintTop_toTopOf="@+id/imageView68" />
+                android:layout_marginTop="20dp"
+                android:background="@drawable/calculate"
+                android:hint="Akila"
+                android:minHeight="48dp"
+                android:textColorHint="#120101"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/imageView55"
+                app:layout_constraintHorizontal_bias="0.545"
+                app:layout_constraintStart_toEndOf="@+id/imageView67"
+                app:layout_constraintTop_toTopOf="@+id/imageView55" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
