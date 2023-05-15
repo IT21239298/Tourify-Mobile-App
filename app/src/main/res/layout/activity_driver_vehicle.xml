@@ -114,7 +114,7 @@
         app:srcCompat="@drawable/white_color" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/dvehicleNumber"
         android:layout_width="236dp"
         android:layout_height="50dp"
         android:layout_marginTop="4dp"
@@ -129,7 +129,7 @@
         app:layout_constraintTop_toTopOf="@+id/imageView6" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/dvehicType"
         android:layout_width="243dp"
         android:layout_height="50dp"
         android:layout_marginEnd="4dp"
@@ -143,7 +143,7 @@
         app:layout_constraintTop_toTopOf="@+id/imageView4" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName3"
+        android:id="@+id/dvehicleInsuarance"
         android:layout_width="244dp"
         android:layout_height="48dp"
         android:layout_marginEnd="4dp"
@@ -179,7 +179,7 @@
         android:textSize="24sp"
         app:cornerRadius="20dp"
         app:iconTint="#170885"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName3"
+        app:layout_constraintEnd_toEndOf="@+id/dvehicleInsuarance"
         app:layout_constraintHorizontal_bias="0.456"
         app:layout_constraintStart_toStartOf="@+id/imageView5"
         app:layout_constraintTop_toBottomOf="@+id/imageView5" />
