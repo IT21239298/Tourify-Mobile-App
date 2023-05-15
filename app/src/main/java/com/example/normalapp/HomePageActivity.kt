@@ -34,5 +34,11 @@ class HomePageActivity : AppCompatActivity() {
             startActivity(Intent)
         }
 
+        val placesButton =findViewById<ImageButton>(R.id.placesBtn)
+        placesButton.setOnClickListener {
+            val Intent =Intent(this,PlacesHomeActivity::class.java)
+            startActivity(Intent)
+        }
+
     }
 }

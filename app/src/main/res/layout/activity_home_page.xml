@@ -103,7 +103,7 @@
         app:layout_constraintTop_toBottomOf="@+id/hotelButton" />
 
     <ImageButton
-        android:id="@+id/imageView2"
+        android:id="@+id/placesBtn"
         android:layout_width="376dp"
         android:layout_height="265dp"
         android:layout_marginStart="20dp"

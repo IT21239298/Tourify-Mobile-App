@@ -48,7 +48,7 @@
         android:ems="10"
         android:background="@drawable/cardviewbg"
         android:inputType="textPersonName"
-        android:text="  Location"
+        android:hint="  Location"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/imageView18"
         app:layout_constraintStart_toStartOf="@+id/imageView18"
@@ -61,10 +61,25 @@
         android:layout_marginTop="16dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="  Name"
+        android:hint="  Name"
         android:background="@drawable/cardviewbg"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/imageView18"
         app:layout_constraintStart_toStartOf="@+id/imageView18"
         app:layout_constraintTop_toBottomOf="@+id/imageView19" />
+
+    <Button
+        android:id="@+id/btnAddPlaces"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#020A35"
+        android:drawableEnd="@drawable/baseline_add_circle_24"
+        android:text="Add"
+        android:textColor="#00BCD4"
+        android:textColorHint="#051573"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView18"
+        app:layout_constraintStart_toStartOf="@+id/imageView18"
+        app:layout_constraintTop_toBottomOf="@+id/placelocationtv" />
 </androidx.constraintlayout.widget.ConstraintLayout>
