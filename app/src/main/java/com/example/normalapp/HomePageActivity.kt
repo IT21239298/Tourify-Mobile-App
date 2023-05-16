@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageButton
+import com.example.testapp_for_assiment.Activities.addproduct
 
 class HomePageActivity : AppCompatActivity() {
 
@@ -20,7 +21,7 @@ class HomePageActivity : AppCompatActivity() {
 
          val secondActButton = findViewById<ImageButton>(R.id.hotelButton)
         secondActButton.setOnClickListener{
-            val Intent = Intent(this,HotelLoginActivity::class.java)
+            val Intent = Intent(this,addproduct::class.java)
             startActivity(Intent)
         }
         val thirdActButton = findViewById<ImageButton>(R.id.customerButton)

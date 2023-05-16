@@ -9,7 +9,7 @@
         />
 
     <solid
-        android:color="@color/grayishWhite"
+        android:color="#fff"
         />
 
 </shape>

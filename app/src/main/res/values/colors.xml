@@ -20,8 +20,7 @@
 
     <!-- Akila -->
 
-    <color name="grayishWhite">#F1EDED</color>
-    <color name="greyishtext">#474444</color>
-    <color name="statusbar">#ffffff</color>
-
+    <color name="background">#C9C0BB</color>
+    <color name="ash">#4A4740</color>
+    <color name="darkred">#FF3700B3</color>
 </resources>

@@ -12,6 +12,7 @@
         android:theme="@style/Theme.NormalApp"
         tools:targetApi="31">
 
+<<<<<<< Updated upstream
         <activity
             android:name=".CBookDriver"
             android:exported="false" />
@@ -30,6 +31,8 @@
         <activity
             android:name=".CMainActivity"
             android:exported="false"/>
+=======
+>>>>>>> Stashed changes
         <activity
             android:name=".CustomerLogin"
             android:exported="false" />
@@ -89,6 +92,33 @@
             android:exported="true" />
         <activity
             android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activities.Updateprduct"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.viewproduct"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Allproducts"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.addproduct"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activities.MainActivity_h"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
