@@ -72,18 +72,18 @@ private fun saveAddPackages() {
     val gPrice=tvPprice.text.toString().trim()
 
     val ref = FirebaseDatabase.getInstance().getReference("GuideAddPackages")
-    val guideAddpackagesID = ref.push().key
-    val guidePackages =guideAddpackagesID?.let{
+    val  packagesID = ref.push().key
+    val guidePackages = packagesID ?.let{
         guidePackageModel(
-
+             it,
             gTourtype,
             gDescription,
             gPrice,
         )
     }
 
-    if(guideAddpackagesID != null){
-        ref.child(guideAddpackagesID).setValue(guidePackages)
+    if( packagesID  != null){
+        ref.child( packagesID ).setValue(guidePackages)
     }
 }
 

@@ -151,14 +151,8 @@ class DashboardActivity : AppCompatActivity() {
         btnLogOut.setOnClickListener{
             Firebase.auth.signOut()
 
-
-
-
             val intent = Intent(this,HomePageActivity::class.java)
             startActivity(intent)
-
-
-
         }
         val secondActButton = findViewById<ImageButton>(R.id.driverpaymentbtn)
         secondActButton.setOnClickListener{

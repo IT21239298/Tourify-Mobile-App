@@ -12,7 +12,7 @@ import com.google.firebase.database.*
 class PlacesHomeActivity : AppCompatActivity() {
 
 
-    private lateinit var recyclerView :RecyclerView
+
     private lateinit var  placesArrayList: ArrayList<ViewPlaces>
     private lateinit var database : DatabaseReference
 
@@ -21,8 +21,7 @@ class PlacesHomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_places_home)
 
-        recyclerView =findViewById(R.id.placeRecycleview)
-        recyclerView.layoutManager=LinearLayoutManager(this)
+
         placesArrayList= arrayListOf()
 
         val addbutton =findViewById<Button>(R.id.addPbtn)
@@ -44,7 +43,7 @@ class PlacesHomeActivity : AppCompatActivity() {
                         }
                     }
 
-                    recyclerView.adapter=PlacesAdapter(placesArrayList)
+
 
                 }
             }

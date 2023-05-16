@@ -62,7 +62,7 @@
         app:srcCompat="@drawable/bg3" />
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/btnprofilePay"
         android:layout_width="@dimen/btnGprofileW"
         android:layout_height="@dimen/btnGprofile"
         android:layout_marginStart="32dp"
@@ -75,7 +75,7 @@
         app:srcCompat="@drawable/profile1" />
 
     <ImageButton
-        android:id="@+id/imageButton2"
+        android:id="@+id/btnServicespay"
         android:layout_width="@dimen/btnGprofileW"
         android:layout_height="@dimen/btnGprofile"
         android:layout_marginStart="32dp"
@@ -83,7 +83,7 @@
         android:backgroundTint="@color/profileGtopic"
         android:contentDescription="click on services"
         android:scaleType="fitCenter"
-        app:layout_constraintStart_toEndOf="@+id/imageButton"
+        app:layout_constraintStart_toEndOf="@+id/btnprofilePay"
         app:layout_constraintTop_toTopOf="@+id/imageView13"
         app:srcCompat="@drawable/service1" />
 
@@ -96,7 +96,7 @@
         android:backgroundTint="@color/profileGtopic"
         android:contentDescription="click on payment schema"
         android:scaleType="fitCenter"
-        app:layout_constraintStart_toEndOf="@+id/imageButton2"
+        app:layout_constraintStart_toEndOf="@+id/btnServicespay"
         app:layout_constraintTop_toTopOf="@+id/imageView13"
         app:srcCompat="@drawable/price3" />
 
@@ -106,7 +106,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.333"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton2">
+        app:layout_constraintTop_toBottomOf="@+id/btnServicespay">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"

@@ -67,6 +67,7 @@
         android:layout_width="@dimen/loginbtnW"
         android:layout_height="@dimen/loginbtnH"
         android:layout_marginTop="24dp"
+        android:inputType="textPassword"
         android:background="@drawable/cardviewbg"
         android:drawableLeft="@drawable/baseline_lock_24"
         android:ems="10"
