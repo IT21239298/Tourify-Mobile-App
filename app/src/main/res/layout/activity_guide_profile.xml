@@ -72,48 +72,58 @@
         app:srcCompat="@drawable/bg3" />
 
     <ImageButton
-                android:id="@+id/profileGbtn1"
-                android:layout_width="@dimen/btnGprofileW"
-                android:layout_height="@dimen/btnGprofile"
-                android:layout_marginStart="160dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="1dp"
-                android:backgroundTint="@color/profileGtopic"
-                android:contentDescription="click on profile"
-                android:scaleType="fitCenter"
-                app:layout_constraintEnd_toStartOf="@+id/imgbg3"
-                app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/profileGbtn1"
+        android:layout_width="@dimen/btnGprofileW"
+        android:layout_height="@dimen/btnGprofile"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="1dp"
+        android:backgroundTint="@color/profileGtopic"
+        android:contentDescription="click on profile"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@+id/imgbg3"
+        app:layout_constraintStart_toStartOf="parent"
 
         app:layout_constraintTop_toTopOf="@+id/imgbg3"
-                app:srcCompat="@drawable/profile1" />
+        app:srcCompat="@drawable/profile1" />
 
-            <ImageButton
-                android:id="@+id/servicesGbtn2"
-                android:layout_width="@dimen/btnGprofileW"
-                android:layout_height="@dimen/btnGprofile"
-                android:layout_marginStart="32dp"
-                android:layout_marginTop="16dp"
-                android:scaleType="fitCenter"
-                android:backgroundTint="@color/profileGtopic"
-                android:contentDescription="click on services"
-                app:layout_constraintStart_toEndOf="@+id/profileGbtn1"
-                app:layout_constraintTop_toTopOf="@+id/imgbg3"
-                app:srcCompat="@drawable/service1"
+    <ImageButton
+        android:id="@+id/servicesGbtn2"
+        android:layout_width="@dimen/btnGprofileW"
+        android:layout_height="@dimen/btnGprofile"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/profileGtopic"
+        android:contentDescription="click on services"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@+id/profileGbtn1"
+        app:layout_constraintTop_toTopOf="@+id/imgbg3"
+        app:srcCompat="@drawable/service1"
 
-                />
+        />
 
-            <ImageButton
-                android:id="@+id/payementGbtn"
-                android:layout_width="@dimen/btnGprofileW"
-                android:layout_height="@dimen/btnGprofile"
-                android:layout_marginStart="32dp"
-                android:layout_marginTop="16dp"
-                android:backgroundTint="@color/profileGtopic"
-                android:scaleType="fitCenter"
-                android:contentDescription="click on payment schema"
-                app:layout_constraintStart_toEndOf="@+id/servicesGbtn2"
-                app:layout_constraintTop_toTopOf="@+id/imgbg3"
-                app:srcCompat="@drawable/price3" />
+    <ImageButton
+        android:id="@+id/payementGbtn"
+        android:layout_width="@dimen/btnGprofileW"
+        android:layout_height="@dimen/btnGprofile"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/profileGtopic"
+        android:contentDescription="click on payment schema"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@+id/servicesGbtn2"
+        app:layout_constraintTop_toTopOf="@+id/imgbg3"
+        app:srcCompat="@drawable/price3" />
+
+    <Button
+        android:id="@+id/logoutbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="LOGOUT"
+        app:layout_constraintEnd_toStartOf="@+id/profileGtopic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ScrollView
         android:layout_width="364dp"
@@ -131,40 +141,40 @@
                 android:id="@+id/profileGemail"
                 android:layout_width="@dimen/tvPG"
                 android:layout_height="@dimen/tvPGH"
-                android:layout_marginTop="36dp"
                 android:layout_marginLeft="50dp"
+                android:layout_marginTop="36dp"
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:text="@string/profileGemail"
                 android:textColor="@color/black" />
 
             <EditText
-                android:id="@+id/profileGpassword"
+                android:id="@+id/pGAddress"
                 android:layout_width="@dimen/tvPG"
                 android:layout_height="@dimen/tvPGH"
-                android:layout_marginTop="24dp"
                 android:layout_marginLeft="50dp"
+                android:layout_marginTop="24dp"
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:text="@string/profileGuidepassword" />
+                android:text="Address" />
 
             <EditText
                 android:id="@+id/profileGcontactnumber"
                 android:layout_width="@dimen/tvPG"
                 android:layout_height="@dimen/tvPGH"
                 android:layout_marginStart="52dp"
-                android:layout_marginTop="24dp"
                 android:layout_marginLeft="50dp"
+                android:layout_marginTop="24dp"
                 android:ems="10"
-                android:inputType="textPersonName"
+
                 android:text="@string/profileGnumber" />
 
             <EditText
                 android:id="@+id/profileGspecialization"
                 android:layout_width="@dimen/tvPG"
                 android:layout_height="@dimen/tvPGH"
-                android:layout_marginTop="24dp"
                 android:layout_marginLeft="50dp"
+                android:layout_marginTop="24dp"
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:text="@string/profileGsepcilized" />
@@ -173,8 +183,8 @@
                 android:id="@+id/profileGdescription"
                 android:layout_width="@dimen/tvPG"
                 android:layout_height="@dimen/tvPGH"
-                android:layout_marginTop="24dp"
                 android:layout_marginLeft="50dp"
+                android:layout_marginTop="24dp"
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:text="@string/profileGdescription" />
@@ -190,7 +200,7 @@
 
             <Button
                 android:id="@+id/GprofileDeltebtn"
-                android:layout_width="130dp"
+                android:layout_width="161dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="130dp"
                 android:backgroundTint="#670B0B"

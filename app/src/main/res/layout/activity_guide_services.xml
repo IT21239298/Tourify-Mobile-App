@@ -64,7 +64,7 @@
         app:srcCompat="@drawable/bg3" />
 
     <ImageButton
-        android:id="@+id/imgbtnG1"
+        android:id="@+id/profilebtnG"
         android:layout_width="@dimen/btnGprofileW"
         android:layout_height="@dimen/btnGprofile"
         android:layout_marginStart="32dp"
@@ -85,12 +85,12 @@
         android:backgroundTint="@color/profileGtopic"
         android:contentDescription="click on services"
         android:scaleType="fitCenter"
-        app:layout_constraintStart_toEndOf="@+id/imgbtnG1"
+        app:layout_constraintStart_toEndOf="@+id/profilebtnG"
         app:layout_constraintTop_toBottomOf="@+id/tvProfile3"
         app:srcCompat="@drawable/service1" />
 
     <ImageButton
-        android:id="@+id/imgBtnG3"
+        android:id="@+id/payemntbtnG"
         android:layout_width="@dimen/btnGprofileW"
         android:layout_height="@dimen/btnGprofile"
         android:layout_marginStart="32dp"
@@ -147,6 +147,6 @@
         app:cornerRadius="20dp"
         app:iconTint="#170885"
         app:layout_constraintStart_toEndOf="@+id/servicesGTV"
-        app:layout_constraintTop_toBottomOf="@+id/imgBtnG3" />
+        app:layout_constraintTop_toBottomOf="@+id/payemntbtnG" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

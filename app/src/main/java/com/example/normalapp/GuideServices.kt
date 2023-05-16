@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageButton
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -16,6 +17,9 @@ class GuideServices : AppCompatActivity() {
     private lateinit var guidesArrayList: ArrayList<TourTypes>
     private lateinit var btnAddNew:Button
     private lateinit var database : DatabaseReference
+    private lateinit var btnprofile:ImageButton
+    private lateinit var btnPayment:ImageButton
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -23,15 +27,28 @@ class GuideServices : AppCompatActivity() {
 
         recyclerViewG =findViewById(R.id.guideView)
         recyclerViewG.layoutManager=LinearLayoutManager(this)
-
         guidesArrayList = arrayListOf()
-
-
         btnAddNew=findViewById(R.id.newAddbttn)
-      btnAddNew.setOnClickListener {
+        btnprofile=findViewById(R.id.profilebtnG)
+        btnPayment=findViewById(R.id.payemntbtnG)
+        btnAddNew.setOnClickListener {
           val intent = Intent(this,guideAddPackages::class.java)
            startActivity(intent)
        }
+
+        btnprofile.setOnClickListener {
+            val intent =Intent(
+                this@GuideServices,GuideProfile::class.java)
+            startActivity(intent)
+        }
+        btnPayment.setOnClickListener{
+            val intent =Intent(
+                this@GuideServices,GuidePayment::class.java)
+            startActivity(intent)
+
+        }
+
+
         database = FirebaseDatabase.getInstance().getReference("GuideAddPackages")
         database.addValueEventListener(object :ValueEventListener{
 

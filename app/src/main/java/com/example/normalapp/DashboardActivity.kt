@@ -27,6 +27,7 @@ class DashboardActivity : AppCompatActivity() {
     private lateinit var driverBirth: TextView
     private lateinit var driverGender: TextView
     private lateinit var driverAddres: TextView
+    private lateinit var driverpname: TextView
 
 
     private lateinit var  btneditD : Button
@@ -45,6 +46,8 @@ class DashboardActivity : AppCompatActivity() {
         driverBirth = findViewById(R.id.DriverProfileBithday)
         driverGender = findViewById(R.id.DriverPorfileGender)
         driverAddres = findViewById(R.id.driverProfileAddress)
+        driverpname = findViewById(R.id.driverhomeprfname)
+
         btneditD =  findViewById(R.id.dEditbtn)
 
 
@@ -137,12 +140,14 @@ class DashboardActivity : AppCompatActivity() {
             val email = it.child("email").value.toString()
             val gender = it.child("gender").value.toString()
             val address = it.child("address").value.toString()
+            val profileName = it.child("name").value.toString()
 
             driverName.text = name
             driverBirth.text = birth
             driverEmail.text = email
             driverGender.text = gender
             driverAddres.text = address
+            driverpname.text = profileName
         }.addOnFailureListener{
             Toast.makeText(this, it.toString(), Toast.LENGTH_SHORT).show()
         }
@@ -151,14 +156,8 @@ class DashboardActivity : AppCompatActivity() {
         btnLogOut.setOnClickListener{
             Firebase.auth.signOut()
 
-
-
-
             val intent = Intent(this,HomePageActivity::class.java)
             startActivity(intent)
-
-
-
         }
         val secondActButton = findViewById<ImageButton>(R.id.driverpaymentbtn)
         secondActButton.setOnClickListener{
@@ -186,4 +185,6 @@ class DashboardActivity : AppCompatActivity() {
             startActivity(Intent)
         }
     }
+
+
 }

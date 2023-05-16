@@ -1,8 +1,10 @@
 package com.example.normalapp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageButton
 import android.widget.TextView
 import android.widget.Toast
 import com.google.firebase.database.DatabaseReference
@@ -18,6 +20,8 @@ class GuidePayment : AppCompatActivity() {
     private lateinit var accomadationCost:TextView
     private lateinit var Gcalculatebtn:Button
     private lateinit var totalG:TextView
+    private lateinit var btnProfile :ImageButton
+    private lateinit var btnServices:ImageButton
 
     private lateinit var database: DatabaseReference
 
@@ -33,6 +37,19 @@ class GuidePayment : AppCompatActivity() {
         accomadationCost=findViewById(R.id.Gpayaccomadation)
         Gcalculatebtn=findViewById(R.id.btnCalculateG)
         totalG=findViewById(R.id.guideTotal)
+
+        btnProfile=findViewById(R.id.btnprofilePay)
+
+
+        btnProfile.setOnClickListener {
+            val intent = Intent(this@GuidePayment,GuideProfile::class.java)
+            startActivity(intent)
+        }
+        btnServices=findViewById(R.id.btnServicespay)
+        btnServices.setOnClickListener {
+            val intent = Intent(this@GuidePayment,GuideServices::class.java)
+            startActivity(intent)
+        }
 
         Gcalculatebtn.setOnClickListener {
             saveGuidePayment()

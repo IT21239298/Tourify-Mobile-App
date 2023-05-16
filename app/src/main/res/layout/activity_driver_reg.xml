@@ -164,7 +164,7 @@
                 android:background="@drawable/details_driver"
                 android:ems="10"
                 android:hint=" Password"
-                android:inputType="textPersonName"
+                android:inputType="textPassword"
                 android:textColorHint="#01030E"
                 android:textStyle="bold|italic"
                 app:layout_constraintEnd_toEndOf="parent"
