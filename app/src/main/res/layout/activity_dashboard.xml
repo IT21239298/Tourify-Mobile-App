@@ -33,7 +33,7 @@
         android:layout_marginTop="4dp"
         android:layout_marginEnd="32dp"
         android:backgroundTint="#020A35"
-        android:text="delete"
+        android:text="Log Out"
         android:textColor="#EC0808"
         android:textColorHint="#051573"
         android:textSize="18sp"
@@ -66,40 +66,30 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView6" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/aclonica"
-        android:text="ID:- SSS123"
-        android:textColor="#F8F6F6"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/driverhomeprfname" />
-
     <ImageButton
         android:id="@+id/driverbankbtn"
         android:layout_width="75dp"
         android:layout_height="75dp"
         android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/drivermain"
         android:contentDescription="Click on the button"
         android:scaleType="fitCenter"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/driverhomeprfname"
         app:srcCompat="@drawable/bank1" />
 
     <ImageButton
         android:id="@+id/driverpaymentbtn"
         android:layout_width="75dp"
         android:layout_height="75dp"
-        android:layout_marginStart="24dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/drivermain"
         android:contentDescription="Click on the button"
         android:scaleType="fitCenter"
         app:layout_constraintStart_toEndOf="@+id/driverbankbtn"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/driverhomeprfname"
         app:srcCompat="@drawable/payment" />
 
     <ImageButton
@@ -107,11 +97,12 @@
         android:layout_width="75dp"
         android:layout_height="75dp"
         android:layout_marginStart="28dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/drivermain"
         android:contentDescription="Click on the button"
         android:scaleType="fitCenter"
         app:layout_constraintStart_toEndOf="@+id/driverpaymentbtn"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/driverhomeprfname"
         app:srcCompat="@drawable/vehicle" />
 
     <ImageButton
@@ -119,11 +110,12 @@
         android:layout_width="75dp"
         android:layout_height="75dp"
         android:layout_marginStart="28dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/drivermain"
         android:contentDescription="Click on the button"
         android:scaleType="fitCenter"
         app:layout_constraintStart_toEndOf="@+id/drivervehiclebtn"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/driverhomeprfname"
         app:srcCompat="@drawable/nofiation" />
 
     <ImageView

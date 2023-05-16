@@ -18,25 +18,38 @@
 
     <TextView
         android:id="@+id/driverloginTopic"
-        android:layout_width="87dp"
-        android:layout_height="30dp"
-        android:text="Tourify"
-        android:textSize="24sp"
+        android:layout_width="242dp"
+        android:layout_height="95dp"
+        android:fontFamily="@font/croissant_one"
+        android:text="TOURIFY"
+        android:textColor="#FDFAFA"
+        android:textSize="60sp"
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.479"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.17" />
+        app:layout_constraintVertical_bias="0.131" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="209dp"
-        android:layout_height="160dp"
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginHorizontal="32dp"
+        app:cardCornerRadius="40dp"
+        app:cardElevation="0dp"
+        app:cardBackgroundColor="@android:color/white"
         app:layout_constraintTop_toBottomOf="@+id/driverloginTopic"
-        app:srcCompat="@drawable/mainlogo" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
 
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/mainlogo" />
+
+    </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>

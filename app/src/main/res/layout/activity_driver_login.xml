@@ -81,9 +81,8 @@
         android:layout_height="55dp"
         android:layout_marginTop="16dp"
         android:background="@drawable/driver_register"
-        android:drawableStart="@drawable/baseline_lock_24"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:inputType="textPassword"
         android:hint="@string/DriverLoginpwd"
         android:textColorHint="@color/Logincolor"
         android:textSize="28sp"
@@ -92,6 +91,7 @@
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/DriverLoginEmail" />
+
 
     <TextView
         android:id="@+id/DontHaveAccount"

@@ -54,6 +54,8 @@ class DriverRegActivity : AppCompatActivity() {
 
         database = Firebase.database.reference
 
+
+
         driverEmail = findViewById(R.id.driverEmail)
         driverpwd = findViewById(R.id.driverpwd)
         driverName = findViewById(R.id.driverName)
@@ -72,6 +74,8 @@ class DriverRegActivity : AppCompatActivity() {
             val sEmail  = driverEmail.text.toString().trim()
             val sPassword = driverpwd.text.toString().trim()
 
+
+
             auth.createUserWithEmailAndPassword( sEmail,  sPassword)
                 .addOnCompleteListener(this) { task ->
                     if (task.isSuccessful) {
@@ -80,7 +84,8 @@ class DriverRegActivity : AppCompatActivity() {
                         val user = auth.currentUser
                         saveData()
 
-                        updateUI(user)
+                       // updateUI(user)
+
                     } else {
                         // If sign in fails, display a message to the user.
 
@@ -97,6 +102,9 @@ class DriverRegActivity : AppCompatActivity() {
     }
 
     private fun saveData() {
+
+
+
         sEmail = driverEmail.text.toString().trim()
         sName = driverName.text.toString().trim()
         sAddress = driverAddres.text.toString().trim()
@@ -106,17 +114,25 @@ class DriverRegActivity : AppCompatActivity() {
         vType = vehicleaType.text.toString().trim()
         vInsuarance = vehicleaInsuarance.text.toString().trim()
 
-val userDriver = UserDriverModel(sEmail,sName,sAddress,sBirth,sGender,vNumber,vType,vInsuarance)
+        val DriverRegValidation = DriverRegValidation()
 
-        val userDriverID = FirebaseAuth.getInstance().currentUser!!.uid
-        database.child("UserDriver").child(userDriverID).setValue(userDriver)
+        if (DriverRegValidation.DriverRegValidateFeild( sName , sBirth,  sAddress, sGender ,sEmail,vNumber,vType,vInsuarance)){
+            val userDriver = UserDriverModel(sEmail,sName,sAddress,sBirth,sGender,vNumber,vType,vInsuarance)
+
+            val userDriverID = FirebaseAuth.getInstance().currentUser!!.uid
+            database.child("UserDriver").child(userDriverID).setValue(userDriver)
+
+            val intent = Intent(this,DashboardActivity::class.java)
+            startActivity(intent)
+        }else{
+            Toast.makeText(this,"All Feild are required..!",Toast.LENGTH_SHORT).show()
+        }
+
+
+
 
 
     }
 
-    private fun updateUI(user: FirebaseUser?) {
 
-val intent = Intent(this,DashboardActivity::class.java)
-        startActivity(intent)
-    }
 }

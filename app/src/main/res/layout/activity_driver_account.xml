@@ -54,41 +54,27 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/account" />
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="242dp"
-        android:layout_height="33dp"
-        android:layout_marginTop="8dp"
-        android:background="@drawable/driver_register"
-        android:text=" Accounts Summery"
-        android:textColor="#090000"
-        android:textSize="25sp"
-        android:textStyle="bold|italic"
-        app:layout_constraintEnd_toEndOf="@+id/imageView12"
-        app:layout_constraintHorizontal_bias="0.378"
-        app:layout_constraintStart_toStartOf="@+id/imageView12"
-        app:layout_constraintTop_toTopOf="@+id/imageView12" />
 
     <EditText
         android:id="@+id/totalWallet"
-        android:layout_width="252dp"
+        android:layout_width="314dp"
         android:layout_height="58dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="120dp"
         android:background="@drawable/driver_register"
-        android:hint="LKR 20000.00"
+        android:hint="Accounts Summery"
         android:textColorHint="#020E4C"
         android:textSize="34sp"
         android:textStyle="bold|italic"
         app:layout_constraintEnd_toEndOf="@+id/imageView12"
-        app:layout_constraintHorizontal_bias="0.43"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/imageView12"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <TextView
         android:id="@+id/textView8"
         android:layout_width="181dp"
         android:layout_height="31dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="112dp"
         android:text="Income Details"
         android:textColor="#F5F6F8"
         android:textSize="24sp"
@@ -96,10 +82,9 @@
 
         android:textStyle="bold|italic"
         app:layout_constraintEnd_toEndOf="@+id/imageView12"
-        app:layout_constraintHorizontal_bias="0.426"
+        app:layout_constraintHorizontal_bias="0.489"
         app:layout_constraintStart_toStartOf="@+id/imageView12"
         app:layout_constraintTop_toBottomOf="@+id/totalWallet" />
-
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/driverAccount"
