@@ -1,15 +1,15 @@
 package com.example.normalapp
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException
-import com.google.firebase.auth.FirebaseAuthInvalidUserException
 
 class CMainActivity : AppCompatActivity() {
 
@@ -18,6 +18,13 @@ class CMainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_cmain)
+
+        val backButton: ImageView = findViewById(R.id.imageView)
+        backButton.setOnClickListener {
+            // Start the main activity
+            val intent = Intent(this, HomePageActivity::class.java)
+            startActivity(intent)
+        }
 
         auth = FirebaseAuth.getInstance()
 
@@ -31,13 +38,13 @@ class CMainActivity : AppCompatActivity() {
 
             login(email, password)
         }
+
         val signUpButton = findViewById<TextView>(R.id.custb2)
         signUpButton.setOnClickListener {
             // Start the CRegister activity
             val intent = Intent(this, CRegister::class.java)
             startActivity(intent)
         }
-
     }
 
     private fun login(email: String, password: String) {
@@ -51,7 +58,6 @@ class CMainActivity : AppCompatActivity() {
                     startActivity(intent)
                 } else {
                     val errorMessage = when (task.exception) {
-                        is FirebaseAuthInvalidUserException -> "Invalid email address"
                         is FirebaseAuthInvalidCredentialsException -> "Invalid password"
                         else -> "Authentication failed"
                     }

@@ -84,7 +84,7 @@
         android:layout_width="140dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="130dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="16dp"
         android:backgroundTint="#358318"
         android:drawableEnd="@drawable/baseline_edit_24"
         android:text="EDIT"
