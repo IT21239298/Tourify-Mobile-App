@@ -51,10 +51,7 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     testImplementation 'junit:junit:4.12'
     testImplementation 'junit:junit:4.12'
-<<<<<<< HEAD
 
-=======
->>>>>>> 03d856fa53ceb96531ff8e116710ddb39ecf5a77
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 

@@ -167,22 +167,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView"
         app:srcCompat="@drawable/d" />
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="149dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="12dp"
-        android:backgroundTint="#020A35"
-        android:text="edit"
-        android:textColor="#00BCD4"
-        android:textColorHint="#051573"
-        android:textSize="24sp"
-        app:cornerRadius="20dp"
-        app:iconTint="#170885"
-        app:layout_constraintEnd_toEndOf="@+id/dvehicleInsuarance"
-        app:layout_constraintHorizontal_bias="0.456"
-        app:layout_constraintStart_toStartOf="@+id/imageView5"
-        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
