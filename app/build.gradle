@@ -46,12 +46,11 @@ dependencies {
     implementation 'com.google.firebase:firebase-database-ktx:20.0.4'
     testImplementation 'junit:junit:4.13.2'
     testImplementation 'junit:junit:4.12'
-<<<<<<< Updated upstream
+
     testImplementation 'junit:junit:4.12'
     testImplementation 'junit:junit:4.12'
     testImplementation 'junit:junit:4.12'
-=======
->>>>>>> Stashed changes
+
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 

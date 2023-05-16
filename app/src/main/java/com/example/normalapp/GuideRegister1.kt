@@ -84,7 +84,7 @@ class GuideRegister1 : AppCompatActivity() {
                      
                         val user = auth.currentUser
                         saveData()
-                        updateUI(user)
+                       // updateUI(user)
                     } else {
                         // If sign in fails, display a message to the user.
                       
@@ -115,16 +115,21 @@ class GuideRegister1 : AppCompatActivity() {
         gBranch=tvGbranch.text.toString().trim()
         gAccount=tvGaccount.text.toString().trim()
 
+        val GuidRegValidation = GuidRegValidation()
 
-        val user =UserGuideModel(gFullname,gNIC,gContactnumber,gAddress,gDistrict,gEmail,gLanguage,gSpecialization,gDescription,gBank,gBranch,gAccount)
-          val userID =FirebaseAuth.getInstance().currentUser!!.uid
-        database.child("User").child(userID).setValue(user)
+        if(GuidRegValidation.GuidRegValidateFeild(gFullname,gNIC,gContactnumber,gAddress,gDistrict,gEmail,gLanguage,gSpecialization,gDescription,gBank,gBranch,gAccount)){
+
+            val user =UserGuideModel(gFullname,gNIC,gContactnumber,gAddress,gDistrict,gEmail,gLanguage,gSpecialization,gDescription,gBank,gBranch,gAccount)
+            val userID =FirebaseAuth.getInstance().currentUser!!.uid
+            database.child("User").child(userID).setValue(user)
+
+            val intent =Intent(this@GuideRegister1,GuideProfile:: class.java)
+            startActivity(intent)
+        }else{
+            Toast.makeText(this,"All Feild Required",Toast.LENGTH_SHORT).show()
+        }
+
     }
 
-    private fun updateUI(user: FirebaseUser?) {
 
-        val intent =Intent(this@GuideRegister1,GuideProfile:: class.java)
-        startActivity(intent)
-
-    }
 }

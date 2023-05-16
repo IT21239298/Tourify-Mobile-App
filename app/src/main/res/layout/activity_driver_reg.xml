@@ -208,69 +208,31 @@
                 android:layout_width="207dp"
                 android:layout_height="32dp"
 
-                android:layout_marginTop="4dp"
+                android:layout_marginTop="52dp"
                 android:text="Vehicle Details"
                 android:textColor="#340683"
                 android:textColorLink="#9C27B0"
                 android:textSize="24sp"
                 android:textStyle="bold|italic"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.586"
+                app:layout_constraintHorizontal_bias="0.57"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/driverpwd" />
-
-            <ImageView
-                android:id="@+id/imageView16"
-                android:layout_width="297dp"
-                android:layout_height="91dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="@+id/imageView10"
-                app:layout_constraintTop_toBottomOf="@+id/textView6"
-                app:srcCompat="@drawable/calculate" />
-
-            <TextView
-                android:id="@+id/textView7"
-                android:layout_width="111dp"
-                android:layout_height="24dp"
-                android:text="upload Image"
-                android:textColor="#070000"
-                android:textSize="16sp"
-                android:textStyle="bold|italic"
-
-                app:layout_constraintEnd_toEndOf="@+id/imageView16"
-                app:layout_constraintStart_toStartOf="@+id/imageView16"
-                app:layout_constraintTop_toBottomOf="@+id/textView6" />
-
-            <Button
-                android:id="@+id/dbrowsbtn"
-                android:layout_width="149dp"
-                android:layout_height="48dp"
-
-                android:layout_marginStart="72dp"
-
-                android:layout_marginTop="40dp"
-                android:backgroundTint="#020A35"
-                android:text="brows"
-                android:textColor="#00BCD4"
-                app:cornerRadius="20dp"
-                app:iconTint="#170885"
-                app:layout_constraintStart_toStartOf="@+id/imageView16"
-                app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
             <EditText
                 android:id="@+id/dvehiclenumber"
                 android:layout_width="315dp"
                 android:layout_height="48dp"
-                android:layout_marginStart="52dp"
-                android:layout_marginTop="16dp"
                 android:background="@drawable/details_driver"
                 android:ems="10"
                 android:hint=" Vehicle Number"
                 android:inputType="textPersonName"
                 android:textColorHint="#01030E"
                 android:textStyle="bold|italic"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.684"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageView16" />
+                app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
             <EditText
                 android:id="@+id/dvehicletype"

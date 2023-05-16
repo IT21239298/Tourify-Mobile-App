@@ -92,7 +92,7 @@ class DriverRegValidationTest {
     }
 
     @Test
-    fun`empty vnumber return false`() {
+    fun`empty vehicle number return false`() {
         val DriverRegValidation = DriverRegValidation()
         val result=DriverRegValidation.DriverRegValidateFeild(
             "Nisal",
@@ -109,7 +109,7 @@ class DriverRegValidationTest {
     }
 
     @Test
-    fun`empty vtype return false`() {
+    fun`empty vehicle type return false`() {
         val DriverRegValidation = DriverRegValidation()
         val result=DriverRegValidation.DriverRegValidateFeild(
             "Nisal",
@@ -126,7 +126,7 @@ class DriverRegValidationTest {
     }
 
     @Test
-    fun`empty vinsurance return false`() {
+    fun`empty insurance return false`() {
         val DriverRegValidation = DriverRegValidation()
         val result=DriverRegValidation.DriverRegValidateFeild(
             "Nisal",
